@@ -2,23 +2,30 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
+import NotFoundPage from './routes/not-found.tsx'
 import ProjectPage from './routes/project.tsx'
 import Root from './routes/root.tsx'
+import SearchPage from './routes/search.tsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/', // Home page
     element: <Root />,
-    errorElement: <div>404 Not Found</div>,
+    errorElement: <NotFoundPage />,
   },
   {
-    path: '/project/:slug',
+    path: '/search', // Search page
+    element: <SearchPage />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: '/project/:slug', // Project page
     element: <ProjectPage />,
-    errorElement: <div>404 Not Found</div>,
+    errorElement: <NotFoundPage />,
   },
   {
-    path: '*', 
-    element: <div>404 Not Found</div>
+    path: '*', // Not found page
+    element: <NotFoundPage />
   }
   
 ])
