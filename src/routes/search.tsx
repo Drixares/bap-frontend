@@ -1,5 +1,11 @@
+import AppLayout from "../components/globals/app-layout";
+
 const SearchPage = () => {
-    return <div>SearchPage</div>;
+    return (
+        <AppLayout>
+            <h1>Search</h1>
+        </AppLayout>
+    )
 }
 
 export default SearchPage;

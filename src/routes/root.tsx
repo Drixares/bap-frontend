@@ -1,11 +1,11 @@
 import '../App.css';
+import AppLayout from '../components/globals/app-layout';
 
 function Root() {
-
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+      <AppLayout>
+        <h1>Home</h1>
+      </AppLayout>
   )
 }
 
