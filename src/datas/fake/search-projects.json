@@ -1,0 +1,194 @@
+[
+    {
+        "title": "Project Alpha",
+        "description": "An innovative research project focused on artificial intelligence",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-01-15",
+        "members": [
+            {
+                "name": "Sarah Chen",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Michael Brown",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Beta",
+        "description": "Exploring quantum computing applications in cryptography",
+        "image": "https://via.placeholder.com/300", 
+        "date": "2023-02-01",
+        "members": [
+            {
+                "name": "David Wilson",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Emma Davis",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Gamma",
+        "description": "Developing sustainable energy solutions",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-03-10",
+        "members": [
+            {
+                "name": "James Taylor",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Lisa Wang",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Delta",
+        "description": "Machine learning for medical diagnosis",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-04-05",
+        "members": [
+            {
+                "name": "Robert Martin",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Anna Smith",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Epsilon",
+        "description": "Advanced robotics and automation systems",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-05-20",
+        "members": [
+            {
+                "name": "Thomas Anderson",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Julia Lee",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Zeta",
+        "description": "Virtual reality applications in education",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-06-15",
+        "members": [
+            {
+                "name": "William Clark",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Sophie Turner",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Eta",
+        "description": "Blockchain technology for supply chain management",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-07-01",
+        "members": [
+            {
+                "name": "Daniel Kim",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Rachel Green",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Theta",
+        "description": "Smart city infrastructure development",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-08-12",
+        "members": [
+            {
+                "name": "Kevin Zhang",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Maria Garcia",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Iota",
+        "description": "Cybersecurity enhancement protocols",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-09-05",
+        "members": [
+            {
+                "name": "Christopher Lee",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Alexandra White",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Kappa",
+        "description": "Autonomous vehicle navigation systems",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-10-20",
+        "members": [
+            {
+                "name": "Andrew Johnson",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Michelle Park",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Lambda",
+        "description": "Renewable energy storage solutions",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-11-15",
+        "members": [
+            {
+                "name": "Ryan Cooper",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Emily Wilson",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Mu",
+        "description": "Advanced materials research and development",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-12-01",
+        "members": [
+            {
+                "name": "Jason Brown",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Laura Martinez",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    }
+]
