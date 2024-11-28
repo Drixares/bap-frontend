@@ -1,0 +1,188 @@
+[
+    {
+        "name": "John Doe",
+        "job": "Researcher",
+        "slug": "john-doe",
+        "image": "https://via.placeholder.com/300", 
+        "description": "A passionate researcher in the field of computer science",
+        "projects": [
+            {
+                "slug": "project-alpha",
+                "title": "Project Alpha",
+                "description": "An innovative research project focused on artificial intelligence",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "slug": "project-beta", 
+                "title": "Project Beta",
+                "description": "Exploring quantum computing applications in cryptography",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "Sarah Chen",
+        "job": "AI Research Lead",
+        "slug": "sarah-chen",
+        "image": "https://via.placeholder.com/300",
+        "description": "Leading expert in artificial intelligence and machine learning",
+        "projects": [
+            {
+                "slug": "project-gamma",
+                "title": "Project Gamma", 
+                "description": "Developing sustainable energy solutions",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "Michael Brown",
+        "job": "Quantum Computing Researcher",
+        "slug": "michael-brown",
+        "image": "https://via.placeholder.com/300",
+        "description": "Specialized in quantum computing and information theory",
+        "projects": [
+            {
+                "slug": "project-delta",
+                "title": "Project Delta",
+                "description": "Machine learning for medical diagnosis",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "Emma Davis",
+        "job": "Sustainability Researcher",
+        "slug": "emma-davis",
+        "image": "https://via.placeholder.com/300",
+        "description": "Research focus on sustainable technology and renewable energy",
+        "projects": [
+            {
+                "slug": "project-epsilon",
+                "title": "Project Epsilon",
+                "description": "Smart grid optimization using AI",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "James Taylor",
+        "job": "Robotics Engineer",
+        "slug": "james-taylor",
+        "image": "https://via.placeholder.com/300",
+        "description": "Expert in robotics and automation systems",
+        "projects": [
+            {
+                "slug": "project-zeta",
+                "title": "Project Zeta",
+                "description": "Advanced robotics for manufacturing",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "Lisa Wang",
+        "job": "Cybersecurity Researcher",
+        "slug": "lisa-wang",
+        "image": "https://via.placeholder.com/300",
+        "description": "Specializing in cybersecurity and network protocols",
+        "projects": [
+            {
+                "slug": "project-eta",
+                "title": "Project Eta",
+                "description": "Next-generation encryption methods",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "David Wilson",
+        "job": "Biomedical Engineer",
+        "slug": "david-wilson",
+        "image": "https://via.placeholder.com/300",
+        "description": "Researcher in biomedical engineering and AI applications",
+        "projects": [
+            {
+                "slug": "project-theta",
+                "title": "Project Theta",
+                "description": "AI-powered medical imaging analysis",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "Anna Smith",
+        "job": "Data Scientist",
+        "slug": "anna-smith",
+        "image": "https://via.placeholder.com/300",
+        "description": "Expert in data science and predictive analytics",
+        "projects": [
+            {
+                "slug": "project-iota",
+                "title": "Project Iota",
+                "description": "Big data analytics for climate prediction",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "Robert Martin",
+        "job": "Cloud Computing Architect",
+        "slug": "robert-martin",
+        "image": "https://via.placeholder.com/300",
+        "description": "Specialized in cloud computing and distributed systems",
+        "projects": [
+            {
+                "slug": "project-kappa",
+                "title": "Project Kappa",
+                "description": "Scalable cloud infrastructure solutions",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "Maria Garcia",
+        "job": "UX Researcher",
+        "slug": "maria-garcia",
+        "image": "https://via.placeholder.com/300",
+        "description": "Research focus on human-computer interaction",
+        "projects": [
+            {
+                "slug": "project-lambda",
+                "title": "Project Lambda",
+                "description": "Advanced user interface design",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "Thomas Anderson",
+        "job": "VR/AR Specialist",
+        "slug": "thomas-anderson",
+        "image": "https://via.placeholder.com/300",
+        "description": "Expert in virtual reality and augmented reality",
+        "projects": [
+            {
+                "slug": "project-mu",
+                "title": "Project Mu",
+                "description": "Immersive learning environments",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "name": "Julia Zhang",
+        "job": "NLP Researcher",
+        "slug": "julia-zhang",
+        "image": "https://via.placeholder.com/300",
+        "description": "Specialized in natural language processing",
+        "projects": [
+            {
+                "slug": "project-nu",
+                "title": "Project Nu",
+                "description": "Multilingual AI communication systems",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    }
+]
