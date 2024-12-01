@@ -1,4 +1,4 @@
-import Footer from "./footer";
+import Footer from "./footer/footer";
 import Menu from "./menu";
 interface AppLayoutProps {
     children: React.ReactNode;

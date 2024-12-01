@@ -1,8 +1,8 @@
-import FooterSocialLink from "./footer/footer-social-link";
-import FooterPageLink from "./footer/footer-page-link";
+import FooterSocialLink from "./footer-social-link";
+import FooterPageLink from "./footer-page-link";
 import IFT from "../../../assets/Group.svg";
 import DV from "../../../assets/Frame.svg";
-import { Link } from "react-router-dom";
+import FooterHeading3 from "./footer-heading3";
 
 const paths = [
     {
@@ -69,9 +69,9 @@ const Footer = () => {
                     </div>
                     <div className="flex justify-between w-full max-w-72 gap-8">
                         <div className="flex flex-col">
-                            <h3 className="text-slate-100 text-lg xs:text-xl mb-3 font-semibold">
+                            <FooterHeading3>
                                 PAGES
-                            </h3>
+                            </FooterHeading3>
                             <ul className="space-y-2">
                                 {paths.map((path, index) => (
                                     <FooterPageLink 
@@ -83,19 +83,21 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="text-sm flex flex-col">
-                            <h3 className="text-slate-100 text-lg xs:text-xl mb-3 font-semibold">
+                            <FooterHeading3>
                                 CONTACT
-                            </h3>
+                            </FooterHeading3>
                             <ul className="space-y-2 text-sm xs:text-base text-slate-300">
                                 <li>
-                                    <Link to="tel:+33-01-41-16-70-00">
-                                        +33 01 41 16 70 00
-                                    </Link>
+                                    <FooterPageLink 
+                                        link="tel:+33-01-41-16-70-00"
+                                        name="+33 01 41 16 70 00"
+                                    /> 
                                 </li>
                                 <li>
-                                    <Link to="mailto:dvic@devinci.fr">
-                                        dvic@devinci.fr
-                                    </Link>
+                                    <FooterPageLink 
+                                        link="mailto:dvic@devinci.fr"
+                                        name="dvic@devinci.fr"
+                                    />
                                 </li>
                             </ul>
                         </div>
