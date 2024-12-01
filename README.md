@@ -23,3 +23,13 @@ Clone the repository :
 ```
 git clone https://github.com/Drixares/bap-frontend.git
 ````
+
+Install the dependencies :
+```
+npm install
+````
+
+Start the project :
+```
+npm run dev
+````
