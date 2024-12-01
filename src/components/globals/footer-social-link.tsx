@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface FooterSocialLinkProps {
     name: string;
     link: string;
@@ -5,11 +7,14 @@ interface FooterSocialLinkProps {
 
 const FooterSocialLink = ({ name, link }: FooterSocialLinkProps) => {
     return ( 
-        <button className="w-64 flex items-center justify-center border rounded-full">
-            <a href={link} className="w-full p-2 text-slate-100">
-                {name}
-            </a>
-        </button>
+        <Link 
+            to={link} 
+            className="w-full p-2 text-slate-100 border border-slate-100 hover:text-slate-400
+            hover:border-slate-400 transition-colors rounded-full 
+            text-center text-base"
+        >
+            {name}
+        </Link>
     );
 }
 
