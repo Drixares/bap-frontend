@@ -1,25 +1,36 @@
-import Authors from './authors.tsx';
+import ProjectAuthors from "./project-authors";
+import { ProjectType } from "../../types/project";
+import ImagePlaceholder from "../../assets/svg/image-placeholder.svg";
 
 interface ProjectProps {
-    project: {
-        title: string;
-        description: string;
-        image: string;
-        date: string;
-        members: { name: string; image: string }[];
-    };
+    project: ProjectType;
 }
 
-const Project = ( {project}: ProjectProps ) => {
+const Project = ({ project }: ProjectProps) => {
+    // date format : October 12, 2024
+    const formattedDate = new Date(project.date).toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+    });
+
     return (
-        <div className='w-4/12 border-8 border-transparent h-fit'>
-            <div className="w-full h-80 rounded-2xl flex justify-center items-center overflow-hidden"><img src={project.image} alt={project.title} className="w-full"></img></div>
-            <p className=' text-xs mt-2 ml-1 text-slate-800'> {project.date} </p>
-            <h3 className='font-bold text-lg ml-1'>{project.title}</h3>
-            <p className='text-xs mb-3 ml-1'>{project.description}</p>
-            <Authors members = {project.members}/>
+        <div className="w-full flex flex-col gap-5">
+            <div className="w-full h-80 rounded-2xl flex justify-center items-center overflow-hidden">
+                <img
+                    src={ImagePlaceholder}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                />
+            </div>
+            <div className="flex flex-col gap-2 mx-2">
+                <p className="text-sm text-slate-600 font-medium">{formattedDate}</p>
+                <h3 className="font-bold text-lg text-gray-950">{project.title}</h3>
+                <p className="text-sm text-gray-800">{project.description}</p>
+            </div>
+            <ProjectAuthors members={project.members} />
         </div>
     );
-}
+};
 
 export default Project;

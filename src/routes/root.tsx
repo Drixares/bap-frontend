@@ -5,6 +5,7 @@ import ButtonLink from "../components/globals/button-link";
 import { ArrowRight } from "lucide-react";
 import fakedatas from "../datas/fake/home-categories.json";
 import Category from "../components/home/category";
+import { CategoryType } from "../types/category";
 
 function Root() {
     return (
@@ -24,9 +25,12 @@ function Root() {
                 </div>
                 <img src={Globe} alt="image of a globe" className="max-w-[54rem] w-2/3 -mr-80" />
             </header>
-            <div>
-                {fakedatas.map((category, index) => (
-                    <Category key={index} category={category} />
+            <div className="flex flex-col gap-36 w-full max-w-screen-2xl mx-auto px-4">
+                {fakedatas.map((category) => (
+                    <Category
+                        key={`category:${category.slug}`}
+                        category={category as CategoryType}
+                    />
                 ))}
             </div>
         </AppLayout>
