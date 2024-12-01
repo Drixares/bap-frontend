@@ -9,8 +9,10 @@ function Root() {
         <AppLayout>
             <header className="flex flex-col xl:flex-row justify-between w-full px-4 py-[110px] mx-auto max-w-screen-2xl">
                 <div className="shrink-0 max-w-screen-xl">
-                    <h3 className="text-2xl">Institute for Future Technologies</h3>
-                    <h1 className="text-8xl font-bold flex flex-col gap-1">
+                    <h3 className="text-base md:text-xl xl:text-2xl font-bold">
+                        Institutive for Future Technologies
+                    </h3>
+                    <h1 className="text-5xl md:text-7xl xl:text-8xl font-bold flex flex-col xl:gap-1">
                         <span>Inventing</span>
                         <span>Technologies that</span>
                         <span className="text-slate-400">Shape the Future</span>
@@ -20,9 +22,12 @@ function Root() {
                         <ArrowRight />
                     </ButtonLink>
                 </div>
-                <img src={Globe} alt="image of a globe" className="max-w-[54rem] w-2/3 -mr-80" />
+                <img
+                    src={Globe}
+                    alt=""
+                    className="max-w-[54rem] w-2/3 -mr-80 max-xl:mx-auto max-xl:w-full max-xl:mt-3"
+                />
             </header>
-            <div>du contenu</div>
         </AppLayout>
     );
 }
