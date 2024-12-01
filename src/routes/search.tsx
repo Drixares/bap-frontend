@@ -5,7 +5,7 @@ const SearchPage = () => {
         <AppLayout>
             <h1>Search</h1>
         </AppLayout>
-    )
-}
+    );
+};
 
 export default SearchPage;

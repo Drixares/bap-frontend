@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const NotFoundPage = () => {
     return (
@@ -8,14 +8,14 @@ const NotFoundPage = () => {
             <p className="text-gray-500 mb-8">
                 The page you are looking for might have been removed or is temporarily unavailable.
             </p>
-            <Link 
-                to="/" 
+            <Link
+                to="/"
                 className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
             >
                 Return to Home
             </Link>
         </div>
     );
-}
+};
 
-export default NotFoundPage; 
+export default NotFoundPage;
