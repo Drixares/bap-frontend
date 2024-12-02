@@ -2,7 +2,7 @@ import { useState } from "react";
 import AppLayout from "../components/globals/app-layout";
 import SearchForm from "../components/search/search-form";
 import projects from "../datas/fake/search-projects.json";
-import { ProjectType } from "../types/project";
+import { ProjectWithAuthorsType } from "../types/project";
 import SearchSwitcher from "../components/search/search-switcher";
 import { DisplayType } from "../types/search";
 import Project from "../components/home/project";
@@ -26,7 +26,7 @@ const SearchPage = () => {
             <div className="w-full max-w-screen-2xl mx-auto px-4 mt-64 flex flex-col gap-12">
                 <SearchSwitcher display={display} setDisplay={setDisplay} />
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-10">
-                    {projects.map((project: ProjectType, index) => (
+                    {projects.map((project: ProjectWithAuthorsType, index: number) => (
                         <Project key={`project:${index}`} project={project} />
                     ))}
                 </div>

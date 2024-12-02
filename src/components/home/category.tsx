@@ -7,6 +7,7 @@ import { CategoryType } from "../../types/category.ts";
 import ArtificialLives from "../../assets/svg/artificialLives.svg";
 import HumanLearning from "../../assets/svg/humanLearning.svg";
 import ResilientFutures from "../../assets/svg/resilientFutures.svg";
+import { ProjectWithAuthorsType } from "../../types/project.ts";
 
 const categoriesImg = {
     "artificial-lives": ArtificialLives,
@@ -31,7 +32,7 @@ const Category = ({ category }: { category: CategoryType }) => {
                 <CategoryDescription>{category.description}</CategoryDescription>
             </div>
             <div className="flex flex-col md:flex-row items-center justify-between gap-x-5 gap-y-10">
-                {category.projects.map((project, index) => (
+                {category.projects.map((project: ProjectWithAuthorsType, index: number) => (
                     <Project key={index} project={project} />
                 ))}
             </div>

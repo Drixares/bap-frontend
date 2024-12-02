@@ -1,13 +1,9 @@
 import ProjectAuthors from "./project-authors";
-import { ProjectType } from "../../types/project";
+import { ProjectWithAuthorsType } from "../../types/project";
 import ImagePlaceholder from "../../assets/svg/image-placeholder.svg";
 import { Link } from "react-router-dom";
 
-interface ProjectProps {
-    project: ProjectType;
-}
-
-const Project = ({ project }: ProjectProps) => {
+const Project = ({ project }: { project: ProjectWithAuthorsType }) => {
     // date format : October 12, 2024
     const formattedDate = new Date(project.date).toLocaleDateString("en-US", {
         month: "long",
@@ -29,7 +25,7 @@ const Project = ({ project }: ProjectProps) => {
                 <h3 className="font-bold text-lg text-gray-950">{project.title}</h3>
                 <p className="text-sm text-gray-800">{project.description}</p>
             </div>
-            <ProjectAuthors members={project.members} />
+            <ProjectAuthors authors={project.authors} />
         </Link>
     );
 };

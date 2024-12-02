@@ -5,7 +5,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-01-15",
         "slug": "project-alpha",
-        "members": [
+        "authors": [
             {
                 "name": "Sarah Chen",
                 "image": "https://via.placeholder.com/300"
@@ -22,7 +22,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-02-01",
         "slug": "project-beta",
-        "members": [
+        "authors": [
             {
                 "name": "David Wilson",
                 "image": "https://via.placeholder.com/300"
@@ -39,7 +39,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-03-10",
         "slug": "project-gamma",
-        "members": [
+        "authors": [
             {
                 "name": "James Taylor",
                 "image": "https://via.placeholder.com/300"
@@ -56,7 +56,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-04-05",
         "slug": "project-delta",
-        "members": [
+        "authors": [
             {
                 "name": "Robert Martin",
                 "image": "https://via.placeholder.com/300"
@@ -73,7 +73,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-05-20",
         "slug": "project-epsilon",
-        "members": [
+        "authors": [
             {
                 "name": "Thomas Anderson",
                 "image": "https://via.placeholder.com/300"
@@ -90,7 +90,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-06-15",
         "slug": "project-zeta",
-        "members": [
+        "authors": [
             {
                 "name": "William Clark",
                 "image": "https://via.placeholder.com/300"
@@ -107,7 +107,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-07-01",
         "slug": "project-eta",
-        "members": [
+        "authors": [
             {
                 "name": "Daniel Kim",
                 "image": "https://via.placeholder.com/300"
@@ -124,7 +124,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-08-12",
         "slug": "project-theta",
-        "members": [
+        "authors": [
             {
                 "name": "Kevin Zhang",
                 "image": "https://via.placeholder.com/300"
@@ -141,7 +141,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-09-05",
         "slug": "project-iota",
-        "members": [
+        "authors": [
             {
                 "name": "Christopher Lee",
                 "image": "https://via.placeholder.com/300"
@@ -158,7 +158,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-10-20",
         "slug": "project-kappa",
-        "members": [
+        "authors": [
             {
                 "name": "Andrew Johnson",
                 "image": "https://via.placeholder.com/300"
@@ -175,7 +175,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-11-15",
         "slug": "project-lambda",
-        "members": [
+        "authors": [
             {
                 "name": "Ryan Cooper",
                 "image": "https://via.placeholder.com/300"
@@ -192,7 +192,7 @@
         "image": "https://via.placeholder.com/300",
         "date": "2023-12-01",
         "slug": "project-mu",
-        "members": [
+        "authors": [
             {
                 "name": "Jason Brown",
                 "image": "https://via.placeholder.com/300"
