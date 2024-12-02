@@ -22,7 +22,7 @@ const SearchForm = () => {
     };
 
     return (
-        <form onSubmit={handleOnSubmit} className="relative z-40 w-full">
+        <form onSubmit={handleOnSubmit} className="relative z-20 w-full">
             <div
                 className={cn(
                     `h-14 rounded-full bg-white flex items-center justify-between

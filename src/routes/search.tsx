@@ -9,14 +9,16 @@ import { DisplayType } from "../types/search";
 import Project from "../components/home/project";
 import { AuthorType } from "../types/author";
 import AuthorCard from "../components/search/author-card";
+import AuthorPopup from "../components/search/author-popup";
 
 const SearchPage = () => {
     const [display, setDisplay] = useState<DisplayType>("projects");
+    const [selectedAuthor, setSelectedAuthor] = useState<AuthorType | null>(null);
 
     return (
         <AppLayout>
             <header className="flex flex-col items-center justify-center gap-14 pt-32 px-4">
-                <div className="flex flex-col items-center gap-8 z-50">
+                <div className="flex flex-col items-center gap-8 z-30">
                     <h1 className="text-6xl font-bold text-slate-950">
                         Explore our innovatives projects
                     </h1>
@@ -38,11 +40,18 @@ const SearchPage = () => {
                 {display === "authors" && (
                     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-10">
                         {authors.map((author: AuthorType, index: number) => (
-                            <AuthorCard key={`author:${index}`} author={author} />
+                            <AuthorCard
+                                key={`author:${index}`}
+                                author={author}
+                                setSelectedAuthor={setSelectedAuthor}
+                            />
                         ))}
                     </div>
                 )}
             </div>
+            {selectedAuthor && (
+                <AuthorPopup author={selectedAuthor} onClose={() => setSelectedAuthor(null)} />
+            )}
         </AppLayout>
     );
 };
