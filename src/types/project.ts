@@ -3,5 +3,6 @@ export type ProjectType = {
     description: string;
     image: string;
     date: string;
+    slug: string;
     members: { name: string; image: string }[];
 };

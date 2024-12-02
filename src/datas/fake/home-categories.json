@@ -9,6 +9,7 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
                 "image": "https://via.placeholder.com/300",
                 "date": "2021-01-01",
+                "slug": "project-1",
                 "members": [
                     {
                         "name": "Member 1",
@@ -25,6 +26,7 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
                 "image": "https://via.placeholder.com/300",
                 "date": "2021-01-02",
+                "slug": "project-2",
                 "members": [
                     {
                         "name": "Member 1",
@@ -41,6 +43,7 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
                 "image": "https://via.placeholder.com/300",
                 "date": "2021-01-03",
+                "slug": "project-3",
                 "members": [
                     {
                         "name": "Member 1",
@@ -64,6 +67,7 @@
                 "description": "Description 1",
                 "image": "https://via.placeholder.com/300",
                 "date": "2021-01-01",
+                "slug": "project-4",
                 "members": [
                     {
                         "name": "Member 1",
@@ -80,6 +84,7 @@
                 "description": "Description 2",
                 "image": "https://via.placeholder.com/300",
                 "date": "2021-01-02",
+                "slug": "project-5",
                 "members": [
                     {
                         "name": "Member 1",
@@ -96,6 +101,7 @@
                 "description": "Description 3",
                 "image": "https://via.placeholder.com/300",
                 "date": "2021-01-03",
+                "slug": "project-6",
                 "members": [
                     {
                         "name": "Member 1",
@@ -119,6 +125,7 @@
                 "description": "Description 1",
                 "image": "https://via.placeholder.com/300",
                 "date": "2021-01-01",
+                "slug": "project-7",
                 "members": [
                     {
                         "name": "Member 1",
@@ -135,6 +142,7 @@
                 "description": "Description 2",
                 "image": "https://via.placeholder.com/300",
                 "date": "2021-01-02",
+                "slug": "project-8",
                 "members": [
                     {
                         "name": "Member 1",
@@ -151,6 +159,7 @@
                 "description": "Description 3",
                 "image": "https://via.placeholder.com/300",
                 "date": "2021-01-03",
+                "slug": "project-9",
                 "members": [
                     {
                         "name": "Member 1",

@@ -17,10 +17,10 @@ const categoriesImg = {
 const Category = ({ category }: { category: CategoryType }) => {
     return (
         <section className="mb-20 flex flex-col gap-16">
-            <div className="flex justify-between w-full">
-                <div className="flex gap-6">
+            <div className="flex justify-between flex-wrap gap-4 w-full">
+                <div className="flex items-center gap-6 h-fit">
                     <CategoryHeading2>{category.title}</CategoryHeading2>
-                    <div className="size-14 rounded-xl overflow-hidden bg-slate-950 p-1">
+                    <div className="size-14 shrink-0 rounded-xl overflow-hidden bg-slate-950 p-1">
                         <img
                             src={categoriesImg[category.slug]}
                             alt={category.title}
@@ -30,7 +30,7 @@ const Category = ({ category }: { category: CategoryType }) => {
                 </div>
                 <CategoryDescription>{category.description}</CategoryDescription>
             </div>
-            <div className="flex items-center justify-between gap-5">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-x-5 gap-y-10">
                 {category.projects.map((project, index) => (
                     <Project key={index} project={project} />
                 ))}
