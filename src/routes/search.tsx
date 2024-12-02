@@ -2,10 +2,13 @@ import { useState } from "react";
 import AppLayout from "../components/globals/app-layout";
 import SearchForm from "../components/search/search-form";
 import projects from "../datas/fake/search-projects.json";
+import authors from "../datas/fake/search-authors.json";
 import { ProjectWithAuthorsType } from "../types/project";
 import SearchSwitcher from "../components/search/search-switcher";
 import { DisplayType } from "../types/search";
 import Project from "../components/home/project";
+import { AuthorType } from "../types/author";
+import AuthorCard from "../components/search/author-card";
 
 const SearchPage = () => {
     const [display, setDisplay] = useState<DisplayType>("projects");
@@ -25,11 +28,20 @@ const SearchPage = () => {
             </header>
             <div className="w-full max-w-screen-2xl mx-auto px-4 mt-64 flex flex-col gap-12">
                 <SearchSwitcher display={display} setDisplay={setDisplay} />
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-10">
-                    {projects.map((project: ProjectWithAuthorsType, index: number) => (
-                        <Project key={`project:${index}`} project={project} />
-                    ))}
-                </div>
+                {display === "projects" && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-10">
+                        {projects.map((project: ProjectWithAuthorsType, index: number) => (
+                            <Project key={`project:${index}`} project={project} />
+                        ))}
+                    </div>
+                )}
+                {display === "authors" && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-10">
+                        {authors.map((author: AuthorType, index: number) => (
+                            <AuthorCard key={`author:${index}`} author={author} />
+                        ))}
+                    </div>
+                )}
             </div>
         </AppLayout>
     );
