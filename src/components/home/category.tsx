@@ -16,7 +16,7 @@ const categoriesImg = {
 
 const Category = ({ category }: { category: CategoryType }) => {
     return (
-        <section className="mb-20 flex flex-col gap-16">
+        <section className="flex flex-col gap-16">
             <div className="flex justify-between flex-wrap gap-4 w-full">
                 <div className="flex items-center gap-6 h-fit">
                     <CategoryHeading2>{category.title}</CategoryHeading2>

@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import fakedatas from "../datas/fake/home-categories.json";
 import Category from "../components/home/category";
 import { CategoryType } from "../types/category";
+import SocialProof from "../components/home/social-proof";
 
 function Root() {
     return (
@@ -31,7 +32,8 @@ function Root() {
                     className="max-w-[54rem] w-2/3 -mr-80 max-xl:mx-auto max-xl:w-full max-xl:mt-3"
                 />
             </header>
-            <div className="flex flex-col gap-36 w-full max-w-screen-2xl mx-auto px-4">
+            <SocialProof />
+            <div className="flex flex-col gap-36 w-full max-w-screen-2xl mx-auto px-4 pb-72">
                 {fakedatas.map((category) => (
                     <Category
                         key={`category:${category.slug}`}
