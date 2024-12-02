@@ -4,6 +4,7 @@
         "description": "An innovative research project focused on artificial intelligence",
         "image": "https://via.placeholder.com/300",
         "date": "2023-01-15",
+        "slug": "project-alpha",
         "members": [
             {
                 "name": "Sarah Chen",
@@ -18,8 +19,9 @@
     {
         "title": "Project Beta",
         "description": "Exploring quantum computing applications in cryptography",
-        "image": "https://via.placeholder.com/300", 
+        "image": "https://via.placeholder.com/300",
         "date": "2023-02-01",
+        "slug": "project-beta",
         "members": [
             {
                 "name": "David Wilson",
@@ -36,6 +38,7 @@
         "description": "Developing sustainable energy solutions",
         "image": "https://via.placeholder.com/300",
         "date": "2023-03-10",
+        "slug": "project-gamma",
         "members": [
             {
                 "name": "James Taylor",
@@ -52,6 +55,7 @@
         "description": "Machine learning for medical diagnosis",
         "image": "https://via.placeholder.com/300",
         "date": "2023-04-05",
+        "slug": "project-delta",
         "members": [
             {
                 "name": "Robert Martin",
@@ -68,6 +72,7 @@
         "description": "Advanced robotics and automation systems",
         "image": "https://via.placeholder.com/300",
         "date": "2023-05-20",
+        "slug": "project-epsilon",
         "members": [
             {
                 "name": "Thomas Anderson",
@@ -84,6 +89,7 @@
         "description": "Virtual reality applications in education",
         "image": "https://via.placeholder.com/300",
         "date": "2023-06-15",
+        "slug": "project-zeta",
         "members": [
             {
                 "name": "William Clark",
@@ -100,6 +106,7 @@
         "description": "Blockchain technology for supply chain management",
         "image": "https://via.placeholder.com/300",
         "date": "2023-07-01",
+        "slug": "project-eta",
         "members": [
             {
                 "name": "Daniel Kim",
@@ -116,6 +123,7 @@
         "description": "Smart city infrastructure development",
         "image": "https://via.placeholder.com/300",
         "date": "2023-08-12",
+        "slug": "project-theta",
         "members": [
             {
                 "name": "Kevin Zhang",
@@ -132,6 +140,7 @@
         "description": "Cybersecurity enhancement protocols",
         "image": "https://via.placeholder.com/300",
         "date": "2023-09-05",
+        "slug": "project-iota",
         "members": [
             {
                 "name": "Christopher Lee",
@@ -148,6 +157,7 @@
         "description": "Autonomous vehicle navigation systems",
         "image": "https://via.placeholder.com/300",
         "date": "2023-10-20",
+        "slug": "project-kappa",
         "members": [
             {
                 "name": "Andrew Johnson",
@@ -164,6 +174,7 @@
         "description": "Renewable energy storage solutions",
         "image": "https://via.placeholder.com/300",
         "date": "2023-11-15",
+        "slug": "project-lambda",
         "members": [
             {
                 "name": "Ryan Cooper",
@@ -180,6 +191,7 @@
         "description": "Advanced materials research and development",
         "image": "https://via.placeholder.com/300",
         "date": "2023-12-01",
+        "slug": "project-mu",
         "members": [
             {
                 "name": "Jason Brown",

@@ -33,7 +33,7 @@ function Root() {
                 />
             </header>
             <SocialProof />
-            <div className="flex flex-col gap-36 w-full max-w-screen-2xl mx-auto px-4 pb-72">
+            <div className="flex flex-col gap-36 w-full max-w-screen-2xl mx-auto px-4">
                 {fakedatas.map((category) => (
                     <Category
                         key={`category:${category.slug}`}
