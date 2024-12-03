@@ -6,42 +6,42 @@ import FooterHeading3 from "./footer-heading3";
 
 const paths = [
     {
-        "label": "Home",
-        "url": "/",
+        label: "Home",
+        url: "/",
     },
     {
-        "label": "Projects",
-        "url": "/search",
+        label: "Projects",
+        url: "/search",
     },
     {
-        "label": "Authors",
-        "url": "/search",
+        label: "Authors",
+        url: "/search",
     },
-]
+];
 
 const socials = [
     {
-        "name": "Facebook",
-        "link": "https://www.facebook.com/iftdevinci/",
+        name: "Facebook",
+        link: "https://www.facebook.com/iftdevinci/",
     },
     {
-        "name": "Instagram",
-        "link": "https://www.instagram.com/ift_devinci/",
+        name: "Instagram",
+        link: "https://www.instagram.com/ift_devinci/",
     },
     {
-        "name": "LinkedIn",
-        "link": "https://www.linkedin.com/company/ift-devinci/",
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/company/ift-devinci/",
     },
     {
-        "name": "Twitter",
-        "link": "https://x.com/IFT_devinci",
+        name: "Twitter",
+        link: "https://x.com/IFT_devinci",
     },
-]
+];
 
 const Footer = () => {
-    return ( 
-        <div className="w-full md:px-4">
-            <footer 
+    return (
+        <div className="w-full md:px-4 pt-72">
+            <footer
                 className="relative mx-auto w-full max-w-screen-2xl py-16 flex flex-col justify-center 
                 bg-slate-950 gap-12 md:rounded-3xl md:mb-4 px-6 xs:px-12 md:px-24 overflow-hidden"
             >
@@ -50,9 +50,9 @@ const Footer = () => {
                 </h2>
                 <div className="flex items-center gap-3 md:gap-5 max-md:flex-wrap">
                     {socials.map((social, index) => (
-                        <FooterSocialLink 
+                        <FooterSocialLink
                             key={`footer:social:${index}`}
-                            name={social.name} 
+                            name={social.name}
                             link={social.link}
                         />
                     ))}
@@ -69,36 +69,28 @@ const Footer = () => {
                     </div>
                     <div className="flex justify-between w-full max-w-72 gap-8">
                         <div className="flex flex-col">
-                            <FooterHeading3>
-                                PAGES
-                            </FooterHeading3>
+                            <FooterHeading3>PAGES</FooterHeading3>
                             <ul className="space-y-2">
                                 {paths.map((path, index) => (
-                                    <FooterPageLink 
+                                    <FooterPageLink
                                         key={`footer:link:${index}`}
-                                        name={path.label} 
+                                        name={path.label}
                                         link={path.url}
                                     />
                                 ))}
                             </ul>
                         </div>
                         <div className="text-sm flex flex-col">
-                            <FooterHeading3>
-                                CONTACT
-                            </FooterHeading3>
+                            <FooterHeading3>CONTACT</FooterHeading3>
                             <ul className="space-y-2 text-sm xs:text-base text-slate-300">
-                                <li>
-                                    <FooterPageLink 
-                                        link="tel:+33-01-41-16-70-00"
-                                        name="+33 01 41 16 70 00"
-                                    /> 
-                                </li>
-                                <li>
-                                    <FooterPageLink 
-                                        link="mailto:dvic@devinci.fr"
-                                        name="dvic@devinci.fr"
-                                    />
-                                </li>
+                                <FooterPageLink
+                                    link="tel:+33-01-41-16-70-00"
+                                    name="+33 01 41 16 70 00"
+                                />
+                                <FooterPageLink
+                                    link="mailto:dvic@devinci.fr"
+                                    name="dvic@devinci.fr"
+                                />
                             </ul>
                         </div>
                     </div>
@@ -110,6 +102,6 @@ const Footer = () => {
             </footer>
         </div>
     );
-}
- 
+};
+
 export default Footer;

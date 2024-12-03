@@ -1,10 +1,10 @@
 interface AuthorProps {
-    members: { name: string; image: string }[];
+    authors: { name: string; image: string }[];
 }
 
-const ProjectAuthors = ({ members }: AuthorProps) => {
-    const string = members[0].name + " and " + (members.length - 1) + " more";
-    const firstTwoAuthors = members.slice(0, 2);
+const ProjectAuthors = ({ authors }: AuthorProps) => {
+    const string = authors[0].name + " and " + (authors.length - 1) + " more";
+    const firstTwoAuthors = authors.slice(0, 2);
 
     return (
         <div className="flex items-center gap-2 mx-2">

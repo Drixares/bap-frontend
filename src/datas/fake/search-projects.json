@@ -4,7 +4,8 @@
         "description": "An innovative research project focused on artificial intelligence",
         "image": "https://via.placeholder.com/300",
         "date": "2023-01-15",
-        "members": [
+        "slug": "project-alpha",
+        "authors": [
             {
                 "name": "Sarah Chen",
                 "image": "https://via.placeholder.com/300"
@@ -18,9 +19,10 @@
     {
         "title": "Project Beta",
         "description": "Exploring quantum computing applications in cryptography",
-        "image": "https://via.placeholder.com/300", 
+        "image": "https://via.placeholder.com/300",
         "date": "2023-02-01",
-        "members": [
+        "slug": "project-beta",
+        "authors": [
             {
                 "name": "David Wilson",
                 "image": "https://via.placeholder.com/300"
@@ -36,7 +38,8 @@
         "description": "Developing sustainable energy solutions",
         "image": "https://via.placeholder.com/300",
         "date": "2023-03-10",
-        "members": [
+        "slug": "project-gamma",
+        "authors": [
             {
                 "name": "James Taylor",
                 "image": "https://via.placeholder.com/300"
@@ -52,7 +55,8 @@
         "description": "Machine learning for medical diagnosis",
         "image": "https://via.placeholder.com/300",
         "date": "2023-04-05",
-        "members": [
+        "slug": "project-delta",
+        "authors": [
             {
                 "name": "Robert Martin",
                 "image": "https://via.placeholder.com/300"
@@ -68,7 +72,8 @@
         "description": "Advanced robotics and automation systems",
         "image": "https://via.placeholder.com/300",
         "date": "2023-05-20",
-        "members": [
+        "slug": "project-epsilon",
+        "authors": [
             {
                 "name": "Thomas Anderson",
                 "image": "https://via.placeholder.com/300"
@@ -84,7 +89,8 @@
         "description": "Virtual reality applications in education",
         "image": "https://via.placeholder.com/300",
         "date": "2023-06-15",
-        "members": [
+        "slug": "project-zeta",
+        "authors": [
             {
                 "name": "William Clark",
                 "image": "https://via.placeholder.com/300"
@@ -100,7 +106,8 @@
         "description": "Blockchain technology for supply chain management",
         "image": "https://via.placeholder.com/300",
         "date": "2023-07-01",
-        "members": [
+        "slug": "project-eta",
+        "authors": [
             {
                 "name": "Daniel Kim",
                 "image": "https://via.placeholder.com/300"
@@ -116,7 +123,8 @@
         "description": "Smart city infrastructure development",
         "image": "https://via.placeholder.com/300",
         "date": "2023-08-12",
-        "members": [
+        "slug": "project-theta",
+        "authors": [
             {
                 "name": "Kevin Zhang",
                 "image": "https://via.placeholder.com/300"
@@ -132,7 +140,8 @@
         "description": "Cybersecurity enhancement protocols",
         "image": "https://via.placeholder.com/300",
         "date": "2023-09-05",
-        "members": [
+        "slug": "project-iota",
+        "authors": [
             {
                 "name": "Christopher Lee",
                 "image": "https://via.placeholder.com/300"
@@ -148,7 +157,8 @@
         "description": "Autonomous vehicle navigation systems",
         "image": "https://via.placeholder.com/300",
         "date": "2023-10-20",
-        "members": [
+        "slug": "project-kappa",
+        "authors": [
             {
                 "name": "Andrew Johnson",
                 "image": "https://via.placeholder.com/300"
@@ -164,7 +174,8 @@
         "description": "Renewable energy storage solutions",
         "image": "https://via.placeholder.com/300",
         "date": "2023-11-15",
-        "members": [
+        "slug": "project-lambda",
+        "authors": [
             {
                 "name": "Ryan Cooper",
                 "image": "https://via.placeholder.com/300"
@@ -180,7 +191,8 @@
         "description": "Advanced materials research and development",
         "image": "https://via.placeholder.com/300",
         "date": "2023-12-01",
-        "members": [
+        "slug": "project-mu",
+        "authors": [
             {
                 "name": "Jason Brown",
                 "image": "https://via.placeholder.com/300"

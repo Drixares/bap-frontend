@@ -4,5 +4,13 @@ export type ProjectType = {
     image: string;
     date: string;
     slug: string;
-    members: { name: string; image: string }[];
+};
+
+export type ProjectsAuthorsType = {
+    name: string;
+    image: string;
+};
+
+export type ProjectWithAuthorsType = ProjectType & {
+    authors: ProjectsAuthorsType[];
 };

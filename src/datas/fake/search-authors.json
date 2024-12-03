@@ -3,20 +3,22 @@
         "name": "John Doe",
         "job": "Researcher",
         "slug": "john-doe",
-        "image": "https://via.placeholder.com/300", 
+        "image": "https://via.placeholder.com/300",
         "description": "A passionate researcher in the field of computer science",
         "projects": [
             {
                 "slug": "project-alpha",
                 "title": "Project Alpha",
                 "description": "An innovative research project focused on artificial intelligence",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-01-15"
             },
             {
-                "slug": "project-beta", 
+                "slug": "project-beta",
                 "title": "Project Beta",
                 "description": "Exploring quantum computing applications in cryptography",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-02-01"
             }
         ]
     },
@@ -29,9 +31,10 @@
         "projects": [
             {
                 "slug": "project-gamma",
-                "title": "Project Gamma", 
+                "title": "Project Gamma",
                 "description": "Developing sustainable energy solutions",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-03-10"
             }
         ]
     },
@@ -46,7 +49,8 @@
                 "slug": "project-delta",
                 "title": "Project Delta",
                 "description": "Machine learning for medical diagnosis",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-04-05"
             }
         ]
     },
@@ -61,7 +65,8 @@
                 "slug": "project-epsilon",
                 "title": "Project Epsilon",
                 "description": "Smart grid optimization using AI",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-05-20"
             }
         ]
     },
@@ -76,7 +81,8 @@
                 "slug": "project-zeta",
                 "title": "Project Zeta",
                 "description": "Advanced robotics for manufacturing",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-06-15"
             }
         ]
     },
@@ -91,7 +97,8 @@
                 "slug": "project-eta",
                 "title": "Project Eta",
                 "description": "Next-generation encryption methods",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-07-01"
             }
         ]
     },
@@ -106,7 +113,8 @@
                 "slug": "project-theta",
                 "title": "Project Theta",
                 "description": "AI-powered medical imaging analysis",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-08-12"
             }
         ]
     },
@@ -121,7 +129,8 @@
                 "slug": "project-iota",
                 "title": "Project Iota",
                 "description": "Big data analytics for climate prediction",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-09-05"
             }
         ]
     },
@@ -136,7 +145,8 @@
                 "slug": "project-kappa",
                 "title": "Project Kappa",
                 "description": "Scalable cloud infrastructure solutions",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-10-20"
             }
         ]
     },
@@ -151,7 +161,8 @@
                 "slug": "project-lambda",
                 "title": "Project Lambda",
                 "description": "Advanced user interface design",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-11-15"
             }
         ]
     },
@@ -166,7 +177,8 @@
                 "slug": "project-mu",
                 "title": "Project Mu",
                 "description": "Immersive learning environments",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2023-12-10"
             }
         ]
     },
@@ -181,7 +193,8 @@
                 "slug": "project-nu",
                 "title": "Project Nu",
                 "description": "Multilingual AI communication systems",
-                "image": "https://via.placeholder.com/300"
+                "image": "https://via.placeholder.com/300",
+                "date": "2024-01-05"
             }
         ]
     }
