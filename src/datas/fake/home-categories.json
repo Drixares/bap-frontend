@@ -5,53 +5,98 @@
         "slug": "artificial-lives",
         "projects": [
             {
+                "id": 1,
+                "documentId": "fv3tagmjgnz6rdw8on56t8sd",
                 "title": "The title of the project",
                 "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
-                "image": "https://via.placeholder.com/300",
-                "date": "2021-01-01",
                 "slug": "project-1",
+                "category": "artificial-lives",
+                "banner": {
+                    "id": 1,
+                    "documentId": "banner-1",
+                    "url": "https://via.placeholder.com/300"
+                },
+                "publishedAt": "2021-01-01",
                 "authors": [
                     {
-                        "name": "Member 1",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 1,
+                        "documentId": "author-1",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 1"
                     },
                     {
-                        "name": "Member 2",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 2,
+                        "documentId": "author-2",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 2"
                     }
                 ]
             },
             {
+                "id": 2,
+                "documentId": "fv3tagmjgnz6rdw8on56t8sd",
                 "title": "The title of the project",
                 "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
-                "image": "https://via.placeholder.com/300",
-                "date": "2021-01-02",
                 "slug": "project-2",
+                "category": "artificial-lives",
+                "banner": {
+                    "id": 2,
+                    "documentId": "banner-2",
+                    "url": "https://via.placeholder.com/300"
+                },
+                "publishedAt": "2021-01-02",
                 "authors": [
                     {
-                        "name": "Member 1",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 3,
+                        "documentId": "author-3",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 1"
                     },
                     {
-                        "name": "Member 2",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 4,
+                        "documentId": "author-4",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 2"
                     }
                 ]
             },
             {
+                "id": 3,
+                "documentId": "fv3tagmjgnz6rdw8on56t8sd",
                 "title": "The title of the project",
                 "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
-                "image": "https://via.placeholder.com/300",
-                "date": "2021-01-03",
                 "slug": "project-3",
+                "category": "artificial-lives",
+                "banner": {
+                    "id": 3,
+                    "documentId": "banner-3",
+                    "url": "https://via.placeholder.com/300"
+                },
+                "publishedAt": "2021-01-03",
                 "authors": [
                     {
-                        "name": "Member 1",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 5,
+                        "documentId": "author-5",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 1"
                     },
                     {
-                        "name": "Member 2",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 6,
+                        "documentId": "author-6",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 2"
                     }
                 ]
             }
@@ -63,53 +108,98 @@
         "slug": "resilient-futures",
         "projects": [
             {
-                "title": "Project 1",
-                "description": "Description 1",
-                "image": "https://via.placeholder.com/300",
-                "date": "2021-01-01",
+                "id": 4,
+                "documentId": "fv3tagmjgnz6rdw8on56t8sd",
+                "title": "The title of the project",
+                "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
                 "slug": "project-4",
+                "category": "resilient-futures",
+                "banner": {
+                    "id": 4,
+                    "documentId": "banner-4",
+                    "url": "https://via.placeholder.com/300"
+                },
+                "publishedAt": "2021-01-04",
                 "authors": [
                     {
-                        "name": "Member 1",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 7,
+                        "documentId": "author-7",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 1"
                     },
                     {
-                        "name": "Member 2",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 8,
+                        "documentId": "author-8",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 2"
                     }
                 ]
             },
             {
-                "title": "Project 2",
-                "description": "Description 2",
-                "image": "https://via.placeholder.com/300",
-                "date": "2021-01-02",
+                "id": 5,
+                "documentId": "fv3tagmjgnz6rdw8on56t8sd",
+                "title": "The title of the project",
+                "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
                 "slug": "project-5",
+                "category": "resilient-futures",
+                "banner": {
+                    "id": 5,
+                    "documentId": "banner-5",
+                    "url": "https://via.placeholder.com/300"
+                },
+                "publishedAt": "2021-01-05",
                 "authors": [
                     {
-                        "name": "Member 1",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 9,
+                        "documentId": "author-9",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 1"
                     },
                     {
-                        "name": "Member 2",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 10,
+                        "documentId": "author-10",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 2"
                     }
                 ]
             },
             {
-                "title": "Project 3",
-                "description": "Description 3",
-                "image": "https://via.placeholder.com/300",
-                "date": "2021-01-03",
+                "id": 6,
+                "documentId": "fv3tagmjgnz6rdw8on56t8sd",
+                "title": "The title of the project",
+                "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
                 "slug": "project-6",
+                "category": "resilient-futures",
+                "banner": {
+                    "id": 6,
+                    "documentId": "banner-6",
+                    "url": "https://via.placeholder.com/300"
+                },
+                "publishedAt": "2021-01-06",
                 "authors": [
                     {
-                        "name": "Member 1",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 11,
+                        "documentId": "author-11",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 1"
                     },
                     {
-                        "name": "Member 2",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 12,
+                        "documentId": "author-12",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 2"
                     }
                 ]
             }
@@ -121,53 +211,98 @@
         "slug": "human-learning",
         "projects": [
             {
-                "title": "Project 1",
-                "description": "Description 1",
-                "image": "https://via.placeholder.com/300",
-                "date": "2021-01-01",
+                "id": 7,
+                "documentId": "fv3tagmjgnz6rdw8on56t8sd",
+                "title": "The title of the project",
+                "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
                 "slug": "project-7",
+                "category": "human-learning",
+                "banner": {
+                    "id": 7,
+                    "documentId": "banner-7",
+                    "url": "https://via.placeholder.com/300"
+                },
+                "publishedAt": "2021-01-07",
                 "authors": [
                     {
-                        "name": "Member 1",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 13,
+                        "documentId": "author-13",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 1"
                     },
                     {
-                        "name": "Member 2",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 14,
+                        "documentId": "author-14",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 2"
                     }
                 ]
             },
             {
-                "title": "Project 2",
-                "description": "Description 2",
-                "image": "https://via.placeholder.com/300",
-                "date": "2021-01-02",
+                "id": 8,
+                "documentId": "fv3tagmjgnz6rdw8on56t8sd",
+                "title": "The title of the project",
+                "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
                 "slug": "project-8",
+                "category": "human-learning",
+                "banner": {
+                    "id": 8,
+                    "documentId": "banner-8",
+                    "url": "https://via.placeholder.com/300"
+                },
+                "publishedAt": "2021-01-08",
                 "authors": [
                     {
-                        "name": "Member 1",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 15,
+                        "documentId": "author-15",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 1"
                     },
                     {
-                        "name": "Member 2",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 16,
+                        "documentId": "author-16",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 2"
                     }
                 ]
             },
             {
-                "title": "Project 3",
-                "description": "Description 3",
-                "image": "https://via.placeholder.com/300",
-                "date": "2021-01-03",
+                "id": 9,
+                "documentId": "fv3tagmjgnz6rdw8on56t8sd",
+                "title": "The title of the project",
+                "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
                 "slug": "project-9",
+                "category": "human-learning",
+                "banner": {
+                    "id": 9,
+                    "documentId": "banner-9",
+                    "url": "https://via.placeholder.com/300"
+                },
+                "publishedAt": "2021-01-09",
                 "authors": [
                     {
-                        "name": "Member 1",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 17,
+                        "documentId": "author-17",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 1"
                     },
                     {
-                        "name": "Member 2",
-                        "image": "https://via.placeholder.com/300"
+                        "id": 18,
+                        "documentId": "author-18",
+                        "avatar": {
+                            "url": "https://via.placeholder.com/300"
+                        },
+                        "name": "Member 2"
                     }
                 ]
             }

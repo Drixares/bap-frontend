@@ -4,8 +4,6 @@ import ImagePlaceholder from "../../assets/svg/image-placeholder.svg";
 import { Link } from "react-router-dom";
 
 const Project = ({ project }: { project: ProjectWithAuthorsType }) => {
-    console.log("Project :", project);
-
     // date format : October 12, 2024
     const formattedDate = new Date(project.publishedAt).toLocaleDateString("en-US", {
         month: "long",
@@ -22,6 +20,9 @@ const Project = ({ project }: { project: ProjectWithAuthorsType }) => {
                             ? `${import.meta.env.VITE_API_URL}${project.banner?.url}`
                             : ImagePlaceholder
                     }
+                    onError={(e) => {
+                        e.currentTarget.src = ImagePlaceholder;
+                    }}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />

@@ -7,9 +7,9 @@ export type ProjectType = {
     description: string;
     slug: string;
     category: string;
-    authors: ProjectsAuthorType[];
     banner: ProjectBannerType;
     publishedAt: string;
+    authors: ProjectsAuthorType[];
 };
 
 export type ProjectsAuthorType = {
