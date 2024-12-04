@@ -6,6 +6,7 @@ import NotFoundPage from "./routes/not-found.tsx";
 import ProjectPage from "./routes/project.tsx";
 import Root from "./routes/root.tsx";
 import SearchPage from "./routes/search.tsx";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const router = createBrowserRouter([
     {
@@ -29,8 +30,16 @@ const router = createBrowserRouter([
     },
 ]);
 
-createRoot(document.getElementById("root")!).render(
-    <React.StrictMode>
-        <RouterProvider router={router} />
-    </React.StrictMode>
-);
+const queryClient = new QueryClient();
+
+export default function App() {
+    return (
+        <QueryClientProvider client={queryClient}>
+            <React.StrictMode>
+                <RouterProvider router={router} />
+            </React.StrictMode>
+        </QueryClientProvider>
+    );
+}
+
+createRoot(document.getElementById("root")!).render(<App />);

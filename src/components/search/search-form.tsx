@@ -48,9 +48,9 @@ const SearchForm = () => {
                 </button>
             </div>
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-full flex items-center justify-center gap-10 -z-10">
-                <div className="size-40 rounded-full bg-primary-orange blur-[200px] translate-y-12" />
-                <div className="size-40 rounded-full bg-primary-purple blur-[200px]" />
-                <div className="size-40 rounded-full bg-primary-blue blur-[200px] translate-y-12" />
+                <div className="size-40 rounded-full bg-primary-orange blur-[100px] translate-y-12" />
+                <div className="size-40 rounded-full bg-primary-purple blur-[100px]" />
+                <div className="size-40 rounded-full bg-primary-blue blur-[100px] translate-y-12" />
             </div>
         </form>
     );

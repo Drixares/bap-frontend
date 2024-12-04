@@ -18,7 +18,14 @@ const AuthorPopup = ({ author, onClose }: AuthorPopupProps) => {
             >
                 <div className="w-full h-60 sm:h-96 rounded-xl overflow-hidden">
                     <img
-                        src={ImagePlaceholder}
+                        src={
+                            author.avatar?.url
+                                ? ` ${import.meta.env.VITE_API_URL}${author.avatar?.url}`
+                                : ImagePlaceholder
+                        }
+                        onError={(e) => {
+                            e.currentTarget.src = ImagePlaceholder;
+                        }}
                         alt={author.name}
                         className="w-full h-full object-cover"
                     />
@@ -46,7 +53,10 @@ const AuthorPopup = ({ author, onClose }: AuthorPopupProps) => {
                                     </h3>
                                     <p className="text-slate-800 text-sm">{project.description}</p>
                                 </div>
-                                <ArrowUpRight size={24} className="group-hover:text-primary-blue" />
+                                <ArrowUpRight
+                                    size={24}
+                                    className="group-hover:text-primary-blue shrink-0"
+                                />
                             </Link>
                         ))}
                     </div>

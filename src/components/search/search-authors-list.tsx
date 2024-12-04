@@ -10,7 +10,7 @@ interface AuthorCardProps {
 const SearchAuthorsList = ({ authors, setSelectedAuthor }: AuthorCardProps) => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-10">
-            {authors.map((author: AuthorType, index: number) => (
+            {authors.map((author, index: number) => (
                 <AuthorCard
                     key={`author:${index}`}
                     author={author}

@@ -1,200 +1,229 @@
 [
     {
-        "name": "John Doe",
-        "job": "Researcher",
-        "slug": "john-doe",
-        "image": "https://via.placeholder.com/300",
-        "description": "A passionate researcher in the field of computer science",
+        "id": 5,
+        "documentId": "fv3tagmjgnz6rdw8on56t8sd",
+        "name": "Mattéo Marchelli",
+        "description": "The student who created this app.",
+        "job": "Creator",
+        "slug": "matteo-marchelli",
+        "avatar": {
+            "id": 1,
+            "documentId": "h4nx6eyaxsugxvfeju1aidnl",
+            "name": "ace6549ae47649ed5ba46cc872320fba.jpg",
+            "url": "/uploads/ace6549ae47649ed5ba46cc872320fba_87c70637f2.jpg"
+        },
         "projects": [
             {
-                "slug": "project-alpha",
-                "title": "Project Alpha",
-                "description": "An innovative research project focused on artificial intelligence",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-01-15"
+                "id": 14,
+                "documentId": "ch3hid9wob6vcg828xsvvjbw",
+                "title": "Projet BAP",
+                "slug": "bap-project",
+                "description": "Durant notre bap, le client voulait que l'on crée un portfolio pour afficher les projets des innovateurs de l'IFT"
             },
             {
-                "slug": "project-beta",
-                "title": "Project Beta",
-                "description": "Exploring quantum computing applications in cryptography",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-02-01"
+                "id": 15,
+                "documentId": "ch3hid9wob6vcg828xsvvjbw",
+                "title": "BAP Project",
+                "slug": "bap-project",
+                "description": "Our client during the bap was the CEO of IFT and we had to create a portfolio of this compagny some they can add their projects on it."
             }
         ]
     },
     {
-        "name": "Sarah Chen",
-        "job": "AI Research Lead",
-        "slug": "sarah-chen",
-        "image": "https://via.placeholder.com/300",
-        "description": "Leading expert in artificial intelligence and machine learning",
+        "id": 6,
+        "documentId": "newdocid123456789",
+        "name": "Alex Johnson",
+        "description": "A seasoned developer and contributor.",
+        "job": "Senior Developer",
+        "slug": "alex-johnson",
+        "avatar": {
+            "id": 2,
+            "documentId": "newdocidavatar123456789",
+            "name": "alexjohnson.jpg",
+            "url": "/uploads/alexjohnson_12345678.jpg"
+        },
         "projects": [
             {
-                "slug": "project-gamma",
-                "title": "Project Gamma",
-                "description": "Developing sustainable energy solutions",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-03-10"
+                "id": 16,
+                "documentId": "newdocidproj123456789",
+                "title": "Innovative Project",
+                "slug": "innovative-project",
+                "description": "A project focused on creating innovative solutions for modern problems."
+            },
+            {
+                "id": 17,
+                "documentId": "newdocidproj987654321",
+                "title": "Future Tech",
+                "slug": "future-tech",
+                "description": "Exploring the future of technology through groundbreaking research."
             }
         ]
     },
     {
-        "name": "Michael Brown",
-        "job": "Quantum Computing Researcher",
-        "slug": "michael-brown",
-        "image": "https://via.placeholder.com/300",
-        "description": "Specialized in quantum computing and information theory",
+        "id": 7,
+        "documentId": "anotherdocid987654321",
+        "name": "Samantha Lee",
+        "description": "Expert in AI and machine learning.",
+        "job": "AI Specialist",
+        "slug": "samantha-lee",
+        "avatar": {
+            "id": 3,
+            "documentId": "anotherdocidavatar987654321",
+            "name": "samanthalee.jpg",
+            "url": "/uploads/samanthalee_98765432.jpg"
+        },
         "projects": [
             {
-                "slug": "project-delta",
-                "title": "Project Delta",
-                "description": "Machine learning for medical diagnosis",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-04-05"
+                "id": 18,
+                "documentId": "anotherdocidproj987654321",
+                "title": "AI Revolution",
+                "slug": "ai-revolution",
+                "description": "Leading the charge in AI development and innovation."
+            },
+            {
+                "id": 19,
+                "documentId": "anotherdocidproj123456789",
+                "title": "Machine Learning Magic",
+                "slug": "machine-learning-magic",
+                "description": "Harnessing the power of machine learning to transform industries."
             }
         ]
     },
     {
-        "name": "Emma Davis",
-        "job": "Sustainability Researcher",
-        "slug": "emma-davis",
-        "image": "https://via.placeholder.com/300",
-        "description": "Research focus on sustainable technology and renewable energy",
+        "id": 8,
+        "documentId": "docid123456789",
+        "name": "John Doe",
+        "description": "A passionate software engineer.",
+        "job": "Software Engineer",
+        "slug": "john-doe",
+        "avatar": {
+            "id": 4,
+            "documentId": "avatarid123456789",
+            "name": "johndoe.jpg",
+            "url": "/uploads/johndoe_12345678.jpg"
+        },
         "projects": [
             {
-                "slug": "project-epsilon",
-                "title": "Project Epsilon",
-                "description": "Smart grid optimization using AI",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-05-20"
+                "id": 20,
+                "documentId": "projid123456789",
+                "title": "Tech Innovations",
+                "slug": "tech-innovations",
+                "description": "Pioneering new technologies for the future."
             }
         ]
     },
     {
-        "name": "James Taylor",
-        "job": "Robotics Engineer",
-        "slug": "james-taylor",
-        "image": "https://via.placeholder.com/300",
-        "description": "Expert in robotics and automation systems",
+        "id": 9,
+        "documentId": "docid987654321",
+        "name": "Jane Smith",
+        "description": "A creative problem solver.",
+        "job": "Product Manager",
+        "slug": "jane-smith",
+        "avatar": {
+            "id": 5,
+            "documentId": "avatarid987654321",
+            "name": "janesmith.jpg",
+            "url": "/uploads/janesmith_98765432.jpg"
+        },
         "projects": [
             {
-                "slug": "project-zeta",
-                "title": "Project Zeta",
-                "description": "Advanced robotics for manufacturing",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-06-15"
+                "id": 21,
+                "documentId": "projid987654321",
+                "title": "Product Vision",
+                "slug": "product-vision",
+                "description": "Guiding product development with strategic vision."
             }
         ]
     },
     {
-        "name": "Lisa Wang",
-        "job": "Cybersecurity Researcher",
-        "slug": "lisa-wang",
-        "image": "https://via.placeholder.com/300",
-        "description": "Specializing in cybersecurity and network protocols",
-        "projects": [
-            {
-                "slug": "project-eta",
-                "title": "Project Eta",
-                "description": "Next-generation encryption methods",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-07-01"
-            }
-        ]
-    },
-    {
-        "name": "David Wilson",
-        "job": "Biomedical Engineer",
-        "slug": "david-wilson",
-        "image": "https://via.placeholder.com/300",
-        "description": "Researcher in biomedical engineering and AI applications",
-        "projects": [
-            {
-                "slug": "project-theta",
-                "title": "Project Theta",
-                "description": "AI-powered medical imaging analysis",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-08-12"
-            }
-        ]
-    },
-    {
-        "name": "Anna Smith",
+        "id": 10,
+        "documentId": "docid192837465",
+        "name": "Michael Green",
+        "description": "Data science enthusiast.",
         "job": "Data Scientist",
-        "slug": "anna-smith",
-        "image": "https://via.placeholder.com/300",
-        "description": "Expert in data science and predictive analytics",
+        "slug": "michael-green",
+        "avatar": {
+            "id": 6,
+            "documentId": "avatarid192837465",
+            "name": "michaelgreen.jpg",
+            "url": "/uploads/michaelgreen_19283746.jpg"
+        },
         "projects": [
             {
-                "slug": "project-iota",
-                "title": "Project Iota",
-                "description": "Big data analytics for climate prediction",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-09-05"
+                "id": 22,
+                "documentId": "projid192837465",
+                "title": "Data Insights",
+                "slug": "data-insights",
+                "description": "Transforming raw data into actionable insights."
             }
         ]
     },
     {
-        "name": "Robert Martin",
-        "job": "Cloud Computing Architect",
-        "slug": "robert-martin",
-        "image": "https://via.placeholder.com/300",
-        "description": "Specialized in cloud computing and distributed systems",
+        "id": 11,
+        "documentId": "docid564738291",
+        "name": "Emily White",
+        "description": "UX design expert.",
+        "job": "UX Designer",
+        "slug": "emily-white",
+        "avatar": {
+            "id": 7,
+            "documentId": "avatarid564738291",
+            "name": "emilywhite.jpg",
+            "url": "/uploads/emilywhite_56473829.jpg"
+        },
         "projects": [
             {
-                "slug": "project-kappa",
-                "title": "Project Kappa",
-                "description": "Scalable cloud infrastructure solutions",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-10-20"
+                "id": 23,
+                "documentId": "projid564738291",
+                "title": "User Experience",
+                "slug": "user-experience",
+                "description": "Designing seamless user interactions."
             }
         ]
     },
     {
-        "name": "Maria Garcia",
-        "job": "UX Researcher",
-        "slug": "maria-garcia",
-        "image": "https://via.placeholder.com/300",
-        "description": "Research focus on human-computer interaction",
+        "id": 12,
+        "documentId": "docid847362915",
+        "name": "David Brown",
+        "description": "Innovative architect.",
+        "job": "Solution Architect",
+        "slug": "david-brown",
+        "avatar": {
+            "id": 8,
+            "documentId": "avatarid847362915",
+            "name": "davidbrown.jpg",
+            "url": "/uploads/davidbrown_84736291.jpg"
+        },
         "projects": [
             {
-                "slug": "project-lambda",
-                "title": "Project Lambda",
-                "description": "Advanced user interface design",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-11-15"
+                "id": 24,
+                "documentId": "projid847362915",
+                "title": "System Architecture",
+                "slug": "system-architecture",
+                "description": "Building scalable and efficient systems."
             }
         ]
     },
     {
-        "name": "Thomas Anderson",
-        "job": "VR/AR Specialist",
-        "slug": "thomas-anderson",
-        "image": "https://via.placeholder.com/300",
-        "description": "Expert in virtual reality and augmented reality",
+        "id": 13,
+        "documentId": "docid102938475",
+        "name": "Laura Black",
+        "description": "Cybersecurity specialist.",
+        "job": "Security Analyst",
+        "slug": "laura-black",
+        "avatar": {
+            "id": 9,
+            "documentId": "avatarid102938475",
+            "name": "laurablack.jpg",
+            "url": "/uploads/laurablack_10293847.jpg"
+        },
         "projects": [
             {
-                "slug": "project-mu",
-                "title": "Project Mu",
-                "description": "Immersive learning environments",
-                "image": "https://via.placeholder.com/300",
-                "date": "2023-12-10"
-            }
-        ]
-    },
-    {
-        "name": "Julia Zhang",
-        "job": "NLP Researcher",
-        "slug": "julia-zhang",
-        "image": "https://via.placeholder.com/300",
-        "description": "Specialized in natural language processing",
-        "projects": [
-            {
-                "slug": "project-nu",
-                "title": "Project Nu",
-                "description": "Multilingual AI communication systems",
-                "image": "https://via.placeholder.com/300",
-                "date": "2024-01-05"
+                "id": 25,
+                "documentId": "projid102938475",
+                "title": "Cyber Defense",
+                "slug": "cyber-defense",
+                "description": "Enhancing security measures to protect data."
             }
         ]
     }

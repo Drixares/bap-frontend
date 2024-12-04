@@ -4,8 +4,10 @@ import ImagePlaceholder from "../../assets/svg/image-placeholder.svg";
 import { Link } from "react-router-dom";
 
 const Project = ({ project }: { project: ProjectWithAuthorsType }) => {
+    console.log("Project :", project);
+
     // date format : October 12, 2024
-    const formattedDate = new Date(project.date).toLocaleDateString("en-US", {
+    const formattedDate = new Date(project.publishedAt).toLocaleDateString("en-US", {
         month: "long",
         day: "numeric",
         year: "numeric",
@@ -15,7 +17,11 @@ const Project = ({ project }: { project: ProjectWithAuthorsType }) => {
         <Link to={`/project/${project.slug}`} className="w-full flex flex-col gap-5 group">
             <div className="w-full h-80 rounded-2xl flex justify-center items-center overflow-hidden">
                 <img
-                    src={ImagePlaceholder}
+                    src={
+                        project.banner?.url
+                            ? `${import.meta.env.VITE_API_URL}${project.banner?.url}`
+                            : ImagePlaceholder
+                    }
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />

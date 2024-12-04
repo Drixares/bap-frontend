@@ -15,7 +15,14 @@ const AuthorCard = ({ author, setSelectedAuthor }: AuthorProps) => {
         >
             <div className="w-full h-80 rounded-2xl overflow-hidden">
                 <img
-                    src={ImagePlaceholder}
+                    src={
+                        author.avatar?.url
+                            ? ` ${import.meta.env.VITE_API_URL}${author.avatar?.url}`
+                            : ImagePlaceholder
+                    }
+                    onError={(e) => {
+                        e.currentTarget.src = ImagePlaceholder;
+                    }}
                     alt={author.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />

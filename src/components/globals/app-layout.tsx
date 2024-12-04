@@ -5,15 +5,13 @@ interface AppLayoutProps {
 }
 
 const AppLayout = ({ children }: AppLayoutProps) => {
-    return ( 
-        <div className='min-h-svh bg-slate-50 flex flex-col'>
+    return (
+        <div className="min-h-svh bg-slate-50 flex flex-col">
             <Menu />
-            <main className='flex-1'>
-                {children}
-            </main>
+            <main className="flex-1">{children}</main>
             <Footer />
         </div>
     );
-}
- 
+};
+
 export default AppLayout;

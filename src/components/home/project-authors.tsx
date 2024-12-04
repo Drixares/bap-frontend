@@ -1,8 +1,7 @@
-interface AuthorProps {
-    authors: { name: string; image: string }[];
-}
+import { ProjectsAuthorType } from "../../types/project";
+import ImagePlaceholder from "../../assets/svg/image-placeholder.svg";
 
-const ProjectAuthors = ({ authors }: AuthorProps) => {
+const ProjectAuthors = ({ authors }: { authors: ProjectsAuthorType[] }) => {
     const string = authors[0].name + " and " + (authors.length - 1) + " more";
     const firstTwoAuthors = authors.slice(0, 2);
 
@@ -15,7 +14,14 @@ const ProjectAuthors = ({ authors }: AuthorProps) => {
                         className="size-6 rounded-3xl overflow-hidden border-2 border-slate-500"
                     >
                         <img
-                            src={author.image}
+                            src={
+                                author.avatar?.url
+                                    ? `${import.meta.env.VITE_API_URL}${author.avatar?.url}`
+                                    : ImagePlaceholder
+                            }
+                            onError={(e) => {
+                                e.currentTarget.src = ImagePlaceholder;
+                            }}
                             alt={author.name}
                             className="w-full h-full object-cover"
                         />

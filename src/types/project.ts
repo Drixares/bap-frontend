@@ -1,16 +1,30 @@
+import { AuthorAvatarType } from "./author";
+
 export type ProjectType = {
+    id: number;
+    documentId: string;
     title: string;
     description: string;
-    image: string;
-    date: string;
     slug: string;
+    category: string;
+    authors: ProjectsAuthorType[];
+    banner: ProjectBannerType;
+    publishedAt: string;
 };
 
-export type ProjectsAuthorsType = {
+export type ProjectsAuthorType = {
+    id: number;
+    documentId: string;
+    avatar: AuthorAvatarType;
     name: string;
-    image: string;
+};
+
+export type ProjectBannerType = {
+    id: number;
+    documentId: string;
+    url: string;
 };
 
 export type ProjectWithAuthorsType = ProjectType & {
-    authors: ProjectsAuthorsType[];
+    authors: ProjectsAuthorType[];
 };

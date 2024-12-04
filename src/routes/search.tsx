@@ -1,8 +1,6 @@
 import { useState } from "react";
 import AppLayout from "../components/globals/app-layout";
 import SearchForm from "../components/search/search-form";
-import projects from "../datas/fake/search-projects.json";
-import authors from "../datas/fake/search-authors.json";
 import { ProjectWithAuthorsType } from "../types/project";
 import SearchSwitcher from "../components/search/search-switcher";
 import { DisplayType } from "../types/search";
@@ -10,10 +8,29 @@ import { AuthorType } from "../types/author";
 import AuthorPopup from "../components/search/author-popup";
 import SearchProjectsList from "../components/search/search-projects-list";
 import SearchAuthorsList from "../components/search/search-authors-list";
+import { useQuery } from "@tanstack/react-query";
+import { getAuthors, getProjects } from "../datas/functions";
+import AuthorsData from "../datas/fake/search-authors.json";
+import ProjectsData from "../datas/fake/search-projects.json";
 
 const SearchPage = () => {
     const [display, setDisplay] = useState<DisplayType>("projects");
     const [selectedAuthor, setSelectedAuthor] = useState<AuthorType | null>(null);
+
+    const authorsQuery = useQuery({
+        queryKey: ["authors"],
+        queryFn: () => getAuthors(),
+    });
+
+    const projectsQuery = useQuery({
+        queryKey: ["projects"],
+        queryFn: () => getProjects(),
+    });
+
+    const authors: AuthorType[] = import.meta.env.DEV ? AuthorsData : authorsQuery.data?.data || [];
+    const projects: ProjectWithAuthorsType[] = import.meta.env.DEV
+        ? ProjectsData
+        : projectsQuery.data?.data || [];
 
     return (
         <AppLayout>
@@ -30,14 +47,9 @@ const SearchPage = () => {
             </header>
             <div className="w-full max-w-screen-2xl mx-auto px-4 mt-64 flex flex-col gap-12">
                 <SearchSwitcher display={display} setDisplay={setDisplay} />
-                {display === "projects" && (
-                    <SearchProjectsList projects={projects as ProjectWithAuthorsType[]} />
-                )}
+                {display === "projects" && <SearchProjectsList projects={projects} />}
                 {display === "authors" && (
-                    <SearchAuthorsList
-                        authors={authors as AuthorType[]}
-                        setSelectedAuthor={setSelectedAuthor}
-                    />
+                    <SearchAuthorsList authors={authors} setSelectedAuthor={setSelectedAuthor} />
                 )}
             </div>
             {selectedAuthor && (
