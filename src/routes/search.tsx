@@ -10,6 +10,7 @@ import { AuthorType } from "../types/author";
 import AuthorPopup from "../components/search/author-popup";
 import SearchProjectsList from "../components/search/search-projects-list";
 import SearchAuthorsList from "../components/search/search-authors-list";
+import { motion } from "motion/react";
 
 const SearchPage = () => {
     const [display, setDisplay] = useState<DisplayType>("projects");
@@ -18,13 +19,23 @@ const SearchPage = () => {
     return (
         <AppLayout>
             <header className="flex flex-col items-center justify-center gap-14 pt-32 px-4">
-                <div className="flex flex-col items-center gap-8 z-30">
-                    <h1 className="text-start md:text-center text-6xl font-bold text-slate-950">
+                <div className="text-start sm:text-center flex flex-col items-center gap-8 z-30">
+                    <motion.h1
+                        className="text-5xl md:text-6xl font-bold text-slate-950"
+                        initial={{ y: 20, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0 }}
+                    >
                         Explore our innovatives projects
-                    </h1>
-                    <p className="text-3xl font-medium text-slate-800">
+                    </motion.h1>
+                    <motion.p
+                        className="text-xl md:text-3xl font-medium text-slate-700"
+                        initial={{ y: 20, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
+                    >
                         Discover and be aware of our innovations
-                    </p>
+                    </motion.p>
                 </div>
                 <SearchForm />
             </header>

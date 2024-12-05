@@ -97,7 +97,7 @@ const Footer = () => {
                 </div>
                 <div
                     className="absolute -bottom-44 left-1/2 transform -translate-x-1/2 w-3/4 h-40 rounded-[100%]
-                    bg-primary-blue blur-[300px]"
+                    bg-primary-blue blur-3xl"
                 />
             </footer>
         </div>
