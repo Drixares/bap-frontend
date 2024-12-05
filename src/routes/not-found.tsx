@@ -2,18 +2,19 @@ import { Link } from "react-router-dom";
 
 const NotFoundPage = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen text-center px-4">
-            <h1 className="text-6xl font-bold text-gray-800 mb-4">404</h1>
-            <p className="text-xl text-gray-600 mb-8">Oops! Page not found</p>
-            <p className="text-gray-500 mb-8">
-                The page you are looking for might have been removed or is temporarily unavailable.
-            </p>
-            <Link
-                to="/"
-                className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-            >
-                Return to Home
+        <div className="flex flex-col items-center justify-center h-screen ">
+            <h1 className="text-7xl pt-60 z-10">404</h1>
+            <p className="text-8xl p-4 font-bold text-center z-10">Page not found</p>
+            <Link to="/" className="w-4/6 rounded-t-full overflow-hidden z-10">
+                <img
+                    src="src/assets/globe.png"
+                    alt="globe"
+                    className="z-10 w-full rounded-full"
+                    />
             </Link>
+            <div className="bg-orange-200 z-0 absolute bottom-10 left-10 w-1/3 h-3/6 rounded-full blur-3xl"></div>
+            <div className="bg-teal-200 z-0 absolute bottom-10 right-10 w-1/3 h-3/6 rounded-full blur-3xl"></div>
+            <div className="bg-fuchsia-200 z-0 absolute top-40 center w-1/3 h-3/6 rounded-full blur-3xl"></div>
         </div>
     );
 };
