@@ -49,26 +49,26 @@ const SearchForm = () => {
                 </button>
             </div>
             <div
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-full flex items-center justify-center gap-10 -z-10 
-                opacity-35"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-full flex items-center justify-center gap-8 -z-10 
+                opacity-40"
             >
                 <motion.div
                     className="size-40 rounded-full bg-primary-orange blur-3xl translate-y-12"
                     initial={{ y: 100 }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 0.3, delay: 0, ease: "easeInOut" }}
+                    transition={{ duration: 0.3, delay: 0.15, ease: "easeInOut" }}
                 />
                 <motion.div
                     className="size-40 rounded-full bg-primary-purple blur-3xl"
                     initial={{ y: 100 }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 0.3, delay: 0.15, ease: "easeInOut" }}
+                    transition={{ duration: 0.3, delay: 0.3, ease: "easeInOut" }}
                 />
                 <motion.div
                     className="size-40 rounded-full bg-primary-blue blur-3xl translate-y-12"
                     initial={{ y: 100 }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 0.3, delay: 0.3, ease: "easeInOut" }}
+                    transition={{ duration: 0.3, delay: 0.45, ease: "easeInOut" }}
                 />
             </div>
         </form>

@@ -15,7 +15,9 @@ function Root() {
         <AppLayout>
             <header className="flex flex-col xl:flex-row justify-between w-full px-4 py-[110px] mx-auto max-w-screen-2xl">
                 <div className="shrink-0 max-w-screen-xl">
-                    <TextEffectPerWord>Institutive for Future Technologies</TextEffectPerWord>
+                    <TextEffectPerWord delay={0.52}>
+                        Institutive for Future Technologies
+                    </TextEffectPerWord>
                     <AnimatedHeading1 />
                     <ButtonLink to="search" variant="primary" className="mt-10">
                         See our innovate projects
