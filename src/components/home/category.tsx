@@ -8,6 +8,7 @@ import ArtificialLives from "../../assets/svg/artificialLives.svg";
 import HumanLearning from "../../assets/svg/humanLearning.svg";
 import ResilientFutures from "../../assets/svg/resilientFutures.svg";
 import { ProjectWithAuthorsType } from "../../types/project.ts";
+import { motion } from "motion/react";
 
 const categoriesImg = {
     "artificial-lives": ArtificialLives,
@@ -33,7 +34,18 @@ const Category = ({ category }: { category: CategoryType }) => {
             </div>
             <div className="flex flex-col md:flex-row items-center justify-between gap-x-5 gap-y-10">
                 {category.projects.map((project: ProjectWithAuthorsType, index: number) => (
-                    <Project key={index} project={project} />
+                    <motion.div
+                        key={`project:${index}`}
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{
+                            y: 0,
+                            opacity: 1,
+                            transition: { duration: 0.3, delay: (index % 3) * 0.1 },
+                        }}
+                        viewport={{ once: true }}
+                    >
+                        <Project project={project} />
+                    </motion.div>
                 ))}
             </div>
             <div className="flex justify-center">
