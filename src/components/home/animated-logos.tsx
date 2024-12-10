@@ -13,15 +13,15 @@ interface AnimatedLogosProps {
 const AnimatedLogo = ({ variants, move, logo }: AnimatedLogosProps) => {
     return (
         <motion.div
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
             variants={{
                 ...variants,
                 move: move,
             }}
             initial="initial"
-            animate={["grow", "move"]}
+            animate={["grow", "move", "counterRotate"]}
         >
-            <LogoBlock {...logo} size={20} />
+            <LogoBlock {...logo} size={22} />
         </motion.div>
     );
 };
