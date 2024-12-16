@@ -60,7 +60,7 @@ const AuthorCard = ({ author }: AuthorProps) => {
                         className="h-full w-full"
                     />
                     <div className="p-6">
-                        <MorphingDialogTitle className="text-2xl text-zinc-950 dark:text-zinc-50">
+                        <MorphingDialogTitle className="text-2xl font-semibold text-zinc-950 dark:text-zinc-50">
                             {author.name}
                         </MorphingDialogTitle>
                         <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400">
