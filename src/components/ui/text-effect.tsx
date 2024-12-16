@@ -2,7 +2,7 @@ import { AnimatePresence, motion, TargetAndTransition, Variants } from "motion/r
 import React from "react";
 import { cn } from "../../utils/functions";
 
-type PresetType = "blur" | "shake" | "scale" | "fade" | "slide";
+export type PresetType = "blur" | "shake" | "scale" | "fade" | "slide" | "fadeBottom";
 
 type TextEffectProps = {
     children: string;
@@ -31,7 +31,7 @@ const defaultContainerVariants: Variants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.08,
+            staggerChildren: 0.05,
         },
     },
     exit: {
@@ -78,6 +78,14 @@ const presetVariants: Record<PresetType, { container: Variants; item: Variants }
             hidden: { opacity: 0 },
             visible: { opacity: 1 },
             exit: { opacity: 0 },
+        },
+    },
+    fadeBottom: {
+        container: defaultContainerVariants,
+        item: {
+            hidden: { opacity: 0, y: 10 },
+            visible: { opacity: 1, y: 0 },
+            exit: { opacity: 0, y: -10 },
         },
     },
     slide: {
