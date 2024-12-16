@@ -10,7 +10,7 @@ import { AuthorType } from "../types/author";
 import AuthorPopup from "../components/search/author-popup";
 import SearchProjectsList from "../components/search/search-projects-list";
 import SearchAuthorsList from "../components/search/search-authors-list";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const SearchPage = () => {
     const [display, setDisplay] = useState<DisplayType>("projects");
