@@ -1,11 +1,20 @@
 import { ProjectWithAuthorsType } from "../../types/project";
 import Project from "../home/project";
 import { motion } from "motion/react";
+import { useSearchParams } from "react-router-dom";
 
 const SearchProjectsList = ({ projects }: { projects: ProjectWithAuthorsType[] }) => {
+
+    const [searchParams] = useSearchParams();
+    const query = searchParams.get("q") || "";
+
+    const filteredProjects = projects.filter((project) =>
+        project.title.toLowerCase().includes(query.toLowerCase())
+    );
+
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-10">
-            {projects.map((project: ProjectWithAuthorsType, index: number) => (
+            {filteredProjects   .map((project: ProjectWithAuthorsType, index: number) => (
                 <motion.div
                     key={`project:${index}`}
                     initial={{ y: 20, opacity: 0 }}

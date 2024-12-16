@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction } from "react";
 import { AuthorType } from "../../types/author";
 import AuthorCard from "./author-card";
 import { motion } from "motion/react";
+import { useSearchParams } from "react-router-dom";
 
 interface AuthorCardProps {
     authors: AuthorType[];
@@ -9,11 +10,18 @@ interface AuthorCardProps {
 }
 
 const SearchAuthorsList = ({ authors, setSelectedAuthor }: AuthorCardProps) => {
+    const [searchParams] = useSearchParams();
+    const query = searchParams.get("q") || "";
+
+    const filteredAuthors = authors.filter((author) =>
+        author.name.toLowerCase().includes(query.toLowerCase())
+    );
+
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-10">
-            {authors.map((author: AuthorType, index: number) => (
+            {filteredAuthors.map((author: AuthorType, index: number) => (
                 <motion.div
-                    key={`project:${index}`}
+                    key={`author:${index}`}
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{
                         y: 0,
