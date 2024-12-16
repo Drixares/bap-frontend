@@ -3,8 +3,9 @@ import { ChangeEvent, useState } from "react";
 import { cn } from "../../utils/functions";
 import { useSearchParams } from "react-router-dom";
 import { motion } from "motion/react";
+import { DisplayType } from "@/types/search";
 
-const SearchForm = () => {
+const SearchForm = ({ display }: { display: DisplayType }) => {
     const [isFocused, setIsFocused] = useState(false);
     const [searchParams, setSearchParams] = useSearchParams();
     const query = searchParams.get("q");
@@ -34,7 +35,9 @@ const SearchForm = () => {
                 <input
                     type="search"
                     name="search"
-                    placeholder="What is the project name ?"
+                    placeholder={`What is the ${
+                        display === "projects" ? "project" : "member"
+                    } name ?`}
                     className="w-full h-full px-6 focus:outline-none placeholder:text-slate-400"
                     onFocus={() => setIsFocused(true)}
                     onBlur={() => setIsFocused(false)}
