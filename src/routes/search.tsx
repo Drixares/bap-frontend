@@ -37,7 +37,7 @@ const SearchPage = () => {
                         Discover and be aware of our innovations
                     </motion.p>
                 </div>
-                <SearchForm />
+                <SearchForm display={display} />
             </header>
             <div className="w-full max-w-screen-2xl mx-auto px-4 mt-64 flex flex-col gap-12">
                 <SearchSwitcher display={display} setDisplay={setDisplay} />
