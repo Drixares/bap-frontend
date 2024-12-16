@@ -9,6 +9,7 @@ import HumanLearning from "../../assets/svg/humanLearning.svg";
 import ResilientFutures from "../../assets/svg/resilientFutures.svg";
 import { ProjectWithAuthorsType } from "../../types/project.ts";
 import { motion } from "motion/react";
+import LogoBlock from "./logo-block.tsx";
 
 const categoriesImg = {
     "artificial-lives": ArtificialLives,
@@ -22,17 +23,15 @@ const Category = ({ category }: { category: CategoryType }) => {
             <div className="flex justify-between flex-wrap gap-4 w-full">
                 <div className="flex items-center gap-6 h-fit">
                     <CategoryHeading2>{category.title}</CategoryHeading2>
-                    <div className="size-14 shrink-0 rounded-xl overflow-hidden bg-slate-950 p-1">
-                        <img
-                            src={categoriesImg[category.slug]}
-                            alt={category.title}
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
+                    <LogoBlock
+                        title={category.title}
+                        srcImg={categoriesImg[category.slug]}
+                        size={14}
+                    />
                 </div>
                 <CategoryDescription>{category.description}</CategoryDescription>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-between gap-x-5 gap-y-10">
+            <div className="flex flex-col md:flex-row justify-between gap-x-5 gap-y-10">
                 {category.projects.map((project: ProjectWithAuthorsType, index: number) => (
                     <motion.div
                         key={`project:${index}`}
