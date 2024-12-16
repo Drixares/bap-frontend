@@ -1,7 +1,45 @@
 import { useParams } from "react-router-dom";
 import AppLayout from "../components/globals/app-layout";
+import RelatedProjects from '../components/project/related-projects';
 
-const ProjectPage = () => {
+const projects =[
+    {
+        "title": "Project Alpha",
+        "description": "An innovative research project focused on artificial intelligence",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-01-15",
+        "slug": "project-alpha",
+        "authors": [
+            {
+                "name": "Sarah Chen",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Michael Brown",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    },
+    {
+        "title": "Project Beta",
+        "description": "Exploring quantum computing applications in cryptography",
+        "image": "https://via.placeholder.com/300",
+        "date": "2023-02-01",
+        "slug": "project-beta",
+        "authors": [
+            {
+                "name": "David Wilson",
+                "image": "https://via.placeholder.com/300"
+            },
+            {
+                "name": "Emma Davis",
+                "image": "https://via.placeholder.com/300"
+            }
+        ]
+    }
+]
+
+const ProjectPage = () =>  {
     // Get the project slug from the URL
     const { slug } = useParams();
 
@@ -67,19 +105,7 @@ const ProjectPage = () => {
                             <p className="w-3/5 text-base">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.</p>
                         </div>
                     </div>
-                    <div className="my-52">
-                        <h2 className="text-5xl font-semibold">Related Projects</h2>
-                        <div className="flex justify-between gap-10">
-                        <div className="w-full">
-                            <img className="w-full my-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq1qC7qPtMAOUR3-ZQsafgfhwmMoyVd5f1hQ&s" alt="project img 1" />
-                            <p className="text-xs text-slate-600">TEMA LA DATE</p>
-                            <h3>ET LA : un petit géranium</h3>
-                        </div>
-                        <div className="w-full">
-                            <img className="w-full my-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq1qC7qPtMAOUR3-ZQsafgfhwmMoyVd5f1hQ&s" alt="project img 1" />
-                        </div>
-                        </div>
-                    </div>
+                    <RelatedProjects projects={projects}/>
                 </div>
             </main>
         </AppLayout>
