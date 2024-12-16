@@ -14,7 +14,10 @@ const SearchAuthorsList = ({ authors, setSelectedAuthor }: AuthorCardProps) => {
     const query = searchParams.get("q") || "";
 
     const filteredAuthors = authors.filter((author) =>
-        author.name.toLowerCase().includes(query.toLowerCase())
+        author.name
+            .replace(/\s/g, "")
+            .toLowerCase()
+            .includes(query.replace(/\s/g, "").toLowerCase())
     );
 
     return (
