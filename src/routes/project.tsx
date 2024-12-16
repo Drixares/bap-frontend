@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import AppLayout from "../components/globals/app-layout";
 import RelatedProjects from '../components/project/related-projects';
-import { ProjectWithAuthorsType } from "../types/project";
 
 const projects =[
     {
