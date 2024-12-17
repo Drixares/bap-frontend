@@ -74,10 +74,10 @@ const project = {
 const ProjectPage = () => {
     return (
         <AppLayout>
-            <div className="flex flex-col m-auto max-w-screen-lg mt-32">
+            <div className="flex flex-col m-auto max-w-screen-lg mt-32 px-4">
                 <h1 className="text-6xl font-black">{project.title}</h1>
                 <img className="w-full my-11" src={project.image[0]} alt="project img 1" />
-                <div className="flex justify-between">
+                <div className="flex flex-col sm:flex-row gap-y-8 justify-between">
                     <div className="space-y-6">
                         <div className="flex flex-col gap-3">
                             <h2 className="text-xl font-semibold leading-none">Date</h2>
@@ -96,7 +96,7 @@ const ProjectPage = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="w-3/5">
+                    <div className="sm:w-3/5">
                         <h2 className="text-3xl font-semibold mb-4">About</h2>
                         <p className="text-base">{project.about}</p>
                         <img className="w-full my-12" src={project.image[1]} alt="project img 1" />
