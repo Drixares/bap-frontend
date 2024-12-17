@@ -1,5 +1,9 @@
 import AppLayout from "../components/globals/app-layout";
 import RelatedProjects from "../components/project/related-projects";
+import Img1 from "../assets/svg/image-placeholder.svg";
+import Img2 from "../assets/svg/devScreen.svg";
+import Img3 from "../assets/svg/astronaut.svg";
+import Img4 from "../assets/svg/yellowRoom.svg";
 
 const projects = [
     {
@@ -39,30 +43,34 @@ const projects = [
 ];
 
 const project = {
-    title: "Fly like an Egyptian",
+    title: "The title of the Project",
     image: [
-        "https://www.capsulecomputers.com.au/wp-content/uploads/2014/04/JoJos-Bizarre-Adventure-Stardust-Crusaders-Episode-3-Screenshot-01-600x338.jpg",
-        "https://booshalmightyreviews.wordpress.com/wp-content/uploads/2014/06/enhance.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBGwjIHwppRTBLgm8bRXTQA0H92KL4EhfDWg&s",
-        "https://www.nautiljon.com/images/perso/00/94/mohamed_avdol_10249.webp",
-        "https://www.nautiljon.com/images/description/00/13/1440856025297_image.jpg",
+        Img1,
+        Img2,
+        Img3,
+        Img4
     ],
-    about: "La mère de Jotaro étant gravemement malade, Jotaro et ses compagnon partir en Egypte pour combattre un vampire",
-    results: "Après avoir battue le vampire, la mère de Jotaro se rétablie rapidement.",
-    more: "C'est la partie 3, et ya genre 9 partie je crois...",
-    date: "12/08/1995",
-    thematic: "JoJo's Bizzare Adventure",
+    about: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
+    results: "We understand that motivation plays a crucial role in maintaining an active lifestyle. That's why we've incorporated exciting features like badges, rewards, and challenges within Sportly. Achieve your goals and unlock various milestones to earn recognition and stay motivated on your fitness journey. So, whether you're a beginner looking to kickstart your fitness routine or a seasoned athlete striving for new personal bests, Sportly is your ideal companion. Download the app today and experience the joy of tracking your sport activity like never before!",
+    more: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
+    date: "November 25, 2024",
+    thematic: "Resilient Futures",
     authors: [
         {
-            name: "Jotaro",
-            role: "protagonise",
-            image: "https://i.pinimg.com/474x/29/44/23/29442399bae2157e858c4c5bf73b9ea6.jpg",
+            name: "John Doe",
+            role: "Innovator",
+            image: "https://color-hex.org/colors/cbd5e1.png",
         },
         {
-            name: "Dio",
-            role: "antagoniste",
-            image: "https://i1.sndcdn.com/artworks-ZZwITQBkzFzEjthR-ygFkkA-t500x500.jpg",
+            name: "John Doe",
+            role: "Innovator",
+            image: "https://color-hex.org/colors/cbd5e1.png",
         },
+        {
+            name: "John Doe",
+            role: "Innovator",
+            image: "https://color-hex.org/colors/cbd5e1.png",
+        }
     ],
 };
 
@@ -70,7 +78,7 @@ const ProjectPage = () => {
     return (
         <AppLayout>
             <main className="my-16 ">
-                <div className="bg-red-300 flex flex-col m-auto max-w-screen-lg">
+                <div className="flex flex-col m-auto max-w-screen-lg">
                     <h1 className="text-6xl">{project.title}</h1>
                     <img className="w-full my-11" src={project.image[0]} alt="project img 1" />
                     <div className="flex justify-between">
@@ -106,7 +114,7 @@ const ProjectPage = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="bg-blue-300 w-3/5">
+                        <div className="w-3/5">
                             <h2 className="text-3xl font-semibold mb-4">About</h2>
                             <p className="text-base">{project.about}</p>
                             <img
@@ -127,13 +135,13 @@ const ProjectPage = () => {
                             />
                             <img
                                 className="w-full mt-11"
-                                src={project.image[3]}
+                                src={project.image[2]}
                                 alt="project img 1"
                             />
                         </div>
                         <img
                             className="w-full mt-5 mb-12"
-                            src={project.image[4]}
+                            src={project.image[3]}
                             alt="project img 1"
                         />
                         <div className="flex flex-col items-end mb-40">
