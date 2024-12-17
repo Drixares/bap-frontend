@@ -57,20 +57,20 @@ const SearchForm = ({ display }: { display: DisplayType }) => {
             >
                 <motion.div
                     className="size-40 rounded-full bg-primary-orange blur-3xl translate-y-12"
-                    initial={{ y: 100 }}
-                    animate={{ y: 0 }}
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.3, delay: 0.15, ease: "easeInOut" }}
                 />
                 <motion.div
                     className="size-40 rounded-full bg-primary-purple blur-3xl"
-                    initial={{ y: 100 }}
-                    animate={{ y: 0 }}
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.3, delay: 0.3, ease: "easeInOut" }}
                 />
                 <motion.div
                     className="size-40 rounded-full bg-primary-blue blur-3xl translate-y-12"
-                    initial={{ y: 100 }}
-                    animate={{ y: 0 }}
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.3, delay: 0.45, ease: "easeInOut" }}
                 />
             </div>
