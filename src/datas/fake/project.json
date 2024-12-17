@@ -1,0 +1,17 @@
+{
+    "title": "The title of the project",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+    "image": "https://via.placeholder.com/300",
+    "date": "2021-01-03",
+    "slug": "project-3",
+    "authors": [
+        {
+            "name": "Member 1",
+            "image": "https://via.placeholder.com/300"
+        },
+        {
+            "name": "Member 2",
+            "image": "https://via.placeholder.com/300"
+        }
+    ]
+}
