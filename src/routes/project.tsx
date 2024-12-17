@@ -77,11 +77,11 @@ const project = {
 const ProjectPage = () => {
     return (
         <AppLayout>
-            <main className="my-16 ">
+            <main className="my-16 mx-4">
                 <div className="flex flex-col m-auto max-w-screen-lg">
                     <h1 className="text-6xl">{project.title}</h1>
                     <img className="w-full my-11" src={project.image[0]} alt="project img 1" />
-                    <div className="flex justify-between">
+                    <div className="lg:flex justify-between">
                         <div className="space-y-6">
                             <div className="flex flex-col gap-3">
                                 <h2 className="text-xl font-semibold leading-none">Date</h2>
@@ -114,8 +114,8 @@ const ProjectPage = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="w-3/5">
-                            <h2 className="text-3xl font-semibold mb-4">About</h2>
+                        <div className="lg:w-3/5">
+                            <h2 className="text-3xl font-semibold mb-4 mt-10 lg:mt-4">About</h2>
                             <p className="text-base">{project.about}</p>
                             <img
                                 className="w-full my-12"
@@ -144,9 +144,9 @@ const ProjectPage = () => {
                             src={project.image[3]}
                             alt="project img 1"
                         />
-                        <div className="flex flex-col items-end mb-40">
-                            <h2 className="w-3/5 text-3xl font-semibold mb-4">More sections</h2>
-                            <p className="w-3/5 text-base">{project.more}</p>
+                        <div className="flex flex-col lg:items-end mb-40">
+                            <h2 className="lg:w-3/5 text-3xl font-semibold mb-4">More sections</h2>
+                            <p className="lg:w-3/5 text-base">{project.more}</p>
                         </div>
                     </div>
                     <RelatedProjects projects={projects} />
