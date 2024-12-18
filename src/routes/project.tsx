@@ -1,10 +1,12 @@
 import AppLayout from "../components/globals/app-layout";
 import RelatedProjects from "../components/project/related-projects";
-import Img1 from "../assets/svg/image-placeholder.svg";
-import Img2 from "../assets/svg/devScreen.svg";
-import Img3 from "../assets/svg/astronaut.svg";
-import Img4 from "../assets/svg/yellowRoom.svg";
 import AuthorElement from "@/components/project/author-element";
+import BannerImg from "../assets/banner-sleep-mode.webp";
+import ProjectImg1 from "../assets/sleep-mode-img1.webp";
+import ProjectImg2 from "../assets/sleep-mode-img2.webp";
+import XiaoXiao from "../assets/xiao-xiao.webp";
+import MarineReynaud from "../assets/marine-reynaud.webp";
+import MaximeBroussard from "../assets/maxime-broussard.webp";
 
 const projects = [
     {
@@ -44,39 +46,45 @@ const projects = [
 ];
 
 const project = {
-    title: "The title of the Project",
-    image: [Img1, Img2, Img3, Img4],
-    about: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
-    results:
-        "We understand that motivation plays a crucial role in maintaining an active lifestyle. That's why we've incorporated exciting features like badges, rewards, and challenges within Sportly. Achieve your goals and unlock various milestones to earn recognition and stay motivated on your fitness journey. So, whether you're a beginner looking to kickstart your fitness routine or a seasoned athlete striving for new personal bests, Sportly is your ideal companion. Download the app today and experience the joy of tracking your sport activity like never before!",
-    more: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
-    date: "November 25, 2024",
-    thematic: "Resilient Futures",
-    authors: [
-        {
-            name: "John Doe",
-            job: "Innovator",
-            image: "https://color-hex.org/colors/cbd5e1.png",
-        },
-        {
-            name: "John Doe",
-            job: "Innovator",
-            image: "https://color-hex.org/colors/cbd5e1.png",
-        },
-        {
-            name: "John Doe",
-            job: "Innovator",
-            image: "https://color-hex.org/colors/cbd5e1.png",
-        },
+    "title": "Sleep Mode",
+    "slug": "sleep-mode",
+    "category": "Human Learning",
+    "description": "The DVIC's interactive pool[^1] table was created with the aim of creating a platform that can be used to teach abstract notions of mathematics to young student. The pool table uses the principle of gamification[^2] in order to generate some addiction from the user to the educationnal platform.",
+    "results": "In conclusion, the constantly projected animations on the interactive billiard table serve as a means to entertain, attract, and amuse users. With the help of AR platform technology, virtual environments can be created to facilitate player interactions. These animations offer a distinctive gaming and learning experience that can bring moments of joy, laughter, and camaraderie. It is a potential tool for motivating students to work and learn on this platform. The system can be further enhanced by utilizing more data surrounding the pool table and incorporating student feedback to make the experience more immersive.",
+    "more": "The General-Purpose Operating System for Augmented Interfaces (GOSAI) is an open-source platform allowing to launch augmented reality projects on any support. Created at the De vinci Innovation Center in 2021, it provides all the essential tools, adapted drivers and modules, to interface an application with hardware. The drivers are the interfaces between the hardware and the applications. The different modules of GOSAI are implemented in a way that it is reusable for all applications created. Gosai allows application parallelism and to add an error and application manager.",
+    "images": [
+        BannerImg,
+        ProjectImg1,
+        ProjectImg2
     ],
-};
+    "date": "01-01-2023",
+    "authors": [
+        {
+            "name": "Marine Reynaud",
+            "image": MarineReynaud,
+            "role": "author"
+        },
+        {
+            "name": "Maxime Broussard",
+            "image": MaximeBroussard,
+            "role": "contributor"
+        },
+        {
+            "name": "Xiao Xiao",
+            "image": XiaoXiao,
+            "role": "supervisor"
+        }
+    ]
+}
 
 const ProjectPage = () => {
     return (
         <AppLayout>
             <div className="flex flex-col m-auto max-w-screen-lg mt-32 px-4">
                 <h1 className="text-6xl font-black">{project.title}</h1>
-                <img className="w-full my-11" src={project.image[0]} alt="project img 1" />
+                <div className="w-full h-auto my-11 rounded-2xl overflow-hidden">
+                    <img className="w-full h-full object-cover" src={project.images[0]} alt="project img 1" />
+                </div>
                 <div className="flex flex-col sm:flex-row gap-y-8 justify-between">
                     <div className="space-y-6">
                         <div className="flex flex-col gap-3">
@@ -85,7 +93,7 @@ const ProjectPage = () => {
                         </div>
                         <div className="flex flex-col gap-3">
                             <h2 className="text-xl font-semibold leading-none">Thematic</h2>
-                            <p className="text-base">{project.thematic}</p>
+                            <p className="text-base">{project.category}</p>
                         </div>
                         <div className="flex flex-col gap-3">
                             <h2 className="text-xl font-semibold leading-none">Members</h2>
@@ -98,21 +106,25 @@ const ProjectPage = () => {
                     </div>
                     <div className="sm:w-3/5">
                         <h2 className="text-3xl font-semibold mb-4">About</h2>
-                        <p className="text-base">{project.about}</p>
-                        <img className="w-full my-12 rounded-2xl" src={project.image[1]} alt="project img 1" />
+                        <p className="text-base">{project.description}</p>
+                        <img className="w-full my-12 rounded-2xl" src={project.images[1]} alt="project img 1" />
                         <h2 className="text-3xl font-semibold mb-4">Results</h2>
                         <p className="text-base">{project.results}</p>
                     </div>
                 </div>
-                <div className="mb-40">
+                <div className="mb-10 md:mb-32">
                     <div className="flex justify-between gap-6">
-                        <img className="w-full mt-11 rounded-2xl" src={project.image[2]} alt="project img 1" />
-                        <img className="w-full mt-11 rounded-2xl" src={project.image[2]} alt="project img 1" />
+                        <div className="mt-11 rounded-2xl">
+                            <img className="rounded-2xl w-full h-full object-cover" src={project.images[2]} alt="project img 1" />
+                        </div>
+                        <div className="mt-11 rounded-2xl">
+                            <img className="rounded-2xl w-full h-full object-cover" src={project.images[2]} alt="project img 1" />
+                        </div>
                     </div>
-                    <img className="w-full mt-5 mb-12 rounded-2xl" src={project.image[3]} alt="project img 1" />
-                    <div className="flex flex-col items-end mb-40">
-                        <h2 className="w-3/5 text-3xl font-semibold mb-4">More sections</h2>
-                        <p className="w-3/5 text-base">{project.more}</p>
+                    <img className="w-full mt-5 mb-12 rounded-2xl" src={project.images[0]} alt="project img 1" />
+                    <div className="flex flex-col md:items-end mb-40">
+                        <h2 className="md:w-3/5 text-3xl font-semibold mb-4">More sections</h2>
+                        <p className="md:w-3/5 text-base">{project.more}</p>
                     </div>
                 </div>
                 <RelatedProjects projects={projects} />
