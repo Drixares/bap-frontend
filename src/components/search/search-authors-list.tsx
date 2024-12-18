@@ -20,6 +20,17 @@ const SearchAuthorsList = ({ authors, setSelectedAuthor }: AuthorCardProps) => {
             .includes(query.replace(/\s/g, "").toLowerCase())
     );
 
+    if (filteredAuthors.length === 0) {
+        return (
+            <div className="flex flex-col justify-center gap-4 pt-8">
+                <h1 className="text-2xl md:text-4xl font-bold text-slate-800">No authors found</h1>
+                <p className="text-lg md:text-xl font-medium text-slate-700">
+                    Try searching with a different keyword
+                </p>
+            </div>
+        );
+    }
+
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-10">
             {filteredAuthors.map((author: AuthorType, index: number) => (
