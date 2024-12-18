@@ -99,17 +99,17 @@ const ProjectPage = () => {
                     <div className="sm:w-3/5">
                         <h2 className="text-3xl font-semibold mb-4">About</h2>
                         <p className="text-base">{project.about}</p>
-                        <img className="w-full my-12" src={project.image[1]} alt="project img 1" />
+                        <img className="w-full my-12 rounded-2xl" src={project.image[1]} alt="project img 1" />
                         <h2 className="text-3xl font-semibold mb-4">Results</h2>
                         <p className="text-base">{project.results}</p>
                     </div>
                 </div>
-                <div>
+                <div className="mb-40">
                     <div className="flex justify-between gap-10">
-                        <img className="w-full mt-11" src={project.image[2]} alt="project img 1" />
-                        <img className="w-full mt-11" src={project.image[2]} alt="project img 1" />
+                        <img className="w-full mt-11 rounded-2xl" src={project.image[2]} alt="project img 1" />
+                        <img className="w-full mt-11 rounded-2xl" src={project.image[2]} alt="project img 1" />
                     </div>
-                    <img className="w-full mt-5 mb-12" src={project.image[3]} alt="project img 1" />
+                    <img className="w-full mt-5 mb-12 rounded-2xl" src={project.image[3]} alt="project img 1" />
                     <div className="flex flex-col items-end mb-40">
                         <h2 className="w-3/5 text-3xl font-semibold mb-4">More sections</h2>
                         <p className="w-3/5 text-base">{project.more}</p>
