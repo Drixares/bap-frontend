@@ -12,7 +12,7 @@ const sponsors = [
 
 const SocialProof = () => {
     return (
-        <div className="flex flex-col items-center justify-center gap-8 pb-72 px-4">
+        <div className="flex flex-col items-center justify-center pt-32 pb-72 px-4">
             <div className="flex items-center gap-8 text-xl">
                 <p className="inline-flex items-center gap-2">
                     <span className="text-primary-blue font-extrabold">100+</span>
@@ -23,11 +23,11 @@ const SocialProof = () => {
                     <span className="text-gray-950 font-medium">collaborators</span>
                 </p>
             </div>
-            <div className="gap-8 grid grid-cols-2 md:grid-cols-4">
+            <div className="gap-10 grid grid-cols-2 md:grid-cols-4">
                 {sponsors.map((sponsor, index) => (
                     <div
                         key={`sponsor:${index}`}
-                        className="aspect-square max-w-36 w-full rounded-full overflow-hidden bg-slate-200 p-2"
+                        className="max-w-36 w-full rounded-full overflow-hidden"
                     >
                         <img
                             src={sponsor.image}

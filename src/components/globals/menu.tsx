@@ -8,7 +8,7 @@ const Menu = () => {
     const pathname = useLocation().pathname;
 
     return (
-        <div className="w-full max-w-screen-2xl mx-auto pt-2 px-4 h-20 flex justify-between items-center">
+        <div className="w-full max-w-screen-2xl mx-auto pt-2 px-4 h-32 flex justify-between items-center">
             <Link to="/">
                 <img src={Logo} alt="logo Institute for Futures Technologies" />
             </Link>
