@@ -105,7 +105,7 @@ const ProjectPage = () => {
                     </div>
                 </div>
                 <div className="mb-40">
-                    <div className="flex justify-between gap-10">
+                    <div className="flex justify-between gap-6">
                         <img className="w-full mt-11 rounded-2xl" src={project.image[2]} alt="project img 1" />
                         <img className="w-full mt-11 rounded-2xl" src={project.image[2]} alt="project img 1" />
                     </div>
